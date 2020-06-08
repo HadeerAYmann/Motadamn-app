@@ -1,0 +1,126 @@
+name: flutterapp
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^0.1.2
+  fluttertoast: ^3.1.3
+  font_awesome_flutter: ^8.8.1
+  flutter_svg: ^0.17.4
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - images/Logoo.png
+    - images/background.jpg
+    - images/image1.png
+    - images/image2.png
+    - images/image3.png
+    - images/image4.png
+    - images/background4.png
+    - images/background2.png
+    - images/background3.png
+    - images/background5.png
+    - images/background6.png
+    - images/background7.png
+    - images/background8.png
+    - images/background9.png
+    - images/background10.png
+    - images/background11.png
+    - images/background12.png
+    - images/background13.png
+    - images/background14.png
+    - images/background15.png
+    - images/background16.png
+    - images/background17.png
+    - images/background18.jpg
+    - images/background19.png
+    - images/background20.png
+    - images/background21.png
+    - images/background22.png
+    - images/background23.png
+    - images/background24.png
+    - images/background25.png
+    - images/background26.png
+    - images/background27.png
+    - images/background28.png
+    - images/background29.png
+    - images/background30.png
+    - images/background31.png
+    - images/background32.png
+    - images/background33.png
+    - images/background34.png
+    - images/background35.png
+    - images/background36.png
+    - images/background37.png
+    - images/background38.png
+    - images/filter.png
+    - images/view.png
+    - images/news1.png
+    - images/news2.png
+    - images/news3.png
+    - images/news4.png
+    - images/About.png
+    - images/user.png
+    - images/pause.png
+    - images/care.png
+    - images/like.png
+    - images/imagewhite.png
+    - images/Mahmoud.JPG
+    - images/NadaS.jpg
+    - images/NadaK.jpg
+    - images/Muhamed.jpg
+    - images/Hadeer.jpg
+    - images/Shimaa.jpg
+    - images/Walaa.jpg
+    - images/MahmoudH.jpeg
+    - images/Asmaa.jpg
+    - images/Donia.jpeg
+    - images/Tarek.jpeg
+    - images/view2.png
+    - images/Map.png
+    - images/Case1.jpeg
+    - images/Case2.jpeg
+    - images/Case3.jpg
+    - images/Case4.jpg
+    - images/Case5.jpg
+    - images/Case6.jpeg
+
+  fonts:
+    - family: Century
+      fonts:
+        - asset: fonts/CenturyGothic.ttf
+    - family: Simple
+      fonts:
+        - asset: fonts/Simple.ttf
