@@ -12,7 +12,7 @@ class DatePicker extends StatefulWidget {
 class _DatePickerState extends State<DatePicker> {
   TextEditingController _pickDateController;
   String _date = 'تاريخ الميلاد';
-
+     DateTime _dateTime;
   @override
   void initState() {
     super.initState();
@@ -154,57 +154,23 @@ class _DatePickerState extends State<DatePicker> {
                         SizedBox(
                           height: 5,
                         ),
-//                        Row(
-//                          children: <Widget>[
-//                            Text("تاريخ الميلاد", textAlign: TextAlign.right, style: TextStyle(color: Colors.black, fontSize: 18),),
-//                            Text(_dateTime == null ? 'يوم/ شهر/ سنة ': _dateTime.toString()),
-//                            SizedBox(width: 10.0,),
-//                            Padding(
-//                              padding: const EdgeInsets.only(right: 20.0,),
-//                              child: IconButton(
-//                                icon: Icon(Icons.calendar_today),
-//                                onPressed: (){
-//                                  showDatePicker(
-//                                      context: context,
-//                                      initialDate: DateTime.now(),
-//                                      firstDate: DateTime(1950),
-//                                      lastDate: DateTime(2222)
-//                                  ).then((data){
-//                                    setState(() {
-//                                      _dateTime = data;
-//                                    });
-//                                  });
-//                                },
-//                              ),
-//                            ),
-//                          ],
-//                        ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20),
-                        child: Stack(
+                        Row(
                           children: <Widget>[
-                            Transform.translate(
-                              offset: Offset(-40.0, 6.0),
-                              child: Text(
-                                '*',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                              TextFormField(
-                                //textDirection: TextDirection.rtl,
-                                decoration: InputDecoration(
-                                  prefixIcon: IconButton(
-                                    icon: Icon(Icons.calendar_today),
-                                    onPressed: ()async{
-                                      final date = await showDatePicker(
-                                          context: context,
-                                          initialDate: DateTime(1985, 1, 1),
-                                          firstDate: DateTime(1985, 1, 1),
-                                          lastDate: DateTime.now(),
-                                          initialDatePickerMode: DatePickerMode.year,
-                                          builder: (BuildContext context, Widget child){
+                            Text("تاريخ الميلاد", textAlign: TextAlign.right, style: TextStyle(color: Colors.black, fontSize: 18),),
+                            Text(_dateTime == null ? 'يوم/ شهر/ سنة ': _dateTime.toString()),
+                            SizedBox(width: 10.0,),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0,),
+                              child: IconButton(
+                                icon: Icon(Icons.calendar_today, color: Color(0xff0064BF),),
+                                onPressed: (){
+                                  showDatePicker(
+                                      context: context,
+                                      initialDate:DateTime(2020),
+                                      firstDate: DateTime(1950),
+                                      lastDate:  DateTime.now(),
+                                      initialDatePickerMode: DatePickerMode.year,
+                                      builder: (BuildContext context, Widget child){
                                             return Theme(
                                               data: ThemeData(
                                                 primaryColor: Colors.black,
@@ -216,22 +182,69 @@ class _DatePickerState extends State<DatePicker> {
                                               child: child,
                                             );
                                           }
-                                      );
-                                      if (date != null){
-                                        var formatter = new DateFormat('yyyy/dd/MM');
-                                        _pickDateController.text = formatter.format(date);
-                                      }
-                                    },
-                                  ),
-                                ),
-                                style: TextStyle(color: Colors.black, fontSize: 18,),
-                                  cursorColor: Colors.redAccent,
-                                  controller: _pickDateController,
-                                  readOnly: true,
+                                  ).then((data){
+                                    setState(() {
+                                      _dateTime = data;
+                                    });
+                                  });
+                                },
                               ),
+                            ),
                           ],
                         ),
-                      ),
+//                      Padding(
+//                        padding: const EdgeInsets.only(left: 20, right: 20),
+//                        child: Stack(
+//                          children: <Widget>[
+//                            Transform.translate(
+//                              offset: Offset(-40.0, 6.0),
+//                              child: Text(
+//                                '*',
+//                                style: TextStyle(
+//                                    color: Colors.red,
+//                                    fontWeight: FontWeight.bold),
+//                              ),
+//                            ),
+//                              TextFormField(
+//                                //textDirection: TextDirection.rtl,
+//                                decoration: InputDecoration(
+//                                  prefixIcon: IconButton(
+//                                    icon: Icon(Icons.calendar_today),
+//                                    onPressed: ()async{
+//                                      final date = await showDatePicker(
+//                                          context: context,
+//                                          initialDate: DateTime(1985, 1, 1),
+//                                          firstDate: DateTime(1985, 1, 1),
+//                                          lastDate: DateTime.now(),
+//                                          initialDatePickerMode: DatePickerMode.year,
+//                                          builder: (BuildContext context, Widget child){
+//                                            return Theme(
+//                                              data: ThemeData(
+//                                                primaryColor: Colors.black,
+//                                                accentColor: Colors.blue,
+//                                                buttonBarTheme: ButtonBarThemeData(
+//                                                  buttonTextTheme: ButtonTextTheme.accent,
+//                                                ),
+//                                              ),
+//                                              child: child,
+//                                            );
+//                                          }
+//                                      );
+//                                      if (date != null){
+//                                        var formatter = new DateFormat('yyyy/dd/MM');
+//                                        _pickDateController.text = formatter.format(date);
+//                                      }
+//                                    },
+//                                  ),
+//                                ),
+//                                style: TextStyle(color: Colors.black, fontSize: 18,),
+//                                  cursorColor: Colors.redAccent,
+//                                  controller: _pickDateController,
+//                                  readOnly: true,
+//                              ),
+//                          ],
+//                        ),
+//                      ),
 
                         Stack(
                           children: <Widget>[

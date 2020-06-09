@@ -1,17 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-//import 'package:intl/intl.dart';
+
 
 class All extends StatefulWidget {
-  static const routeName = '/DateDark';
+
   @override
   _AllState createState() => _AllState();
 }
 
 class _AllState extends State<All> {
-  TextEditingController _pickDateController;
   String _date = 'سنة / شهر / يوم';
-
   int _currentIndex = 0;
   String devalue;
   void changeValue(String val) {
@@ -34,11 +32,12 @@ class _AllState extends State<All> {
     });
   }
 
-//   DateTime _dateTime;
+  DateTime _dateTime;
+
   @override
   void initState() {
     super.initState();
-    _pickDateController = TextEditingController(text: _date);
+    _dateTime = DateTime.now();
   }
 
   @override
@@ -156,61 +155,6 @@ class _AllState extends State<All> {
                         SizedBox(
                           height: 5,
                         ),
-//                        Row(
-//                          children: <Widget>[
-//                            Text("تاريخ الميلاد", textAlign: TextAlign.right, style: TextStyle(color: Colors.black, fontSize: 18),),
-//                            Text(_dateTime == null ? 'يوم/ شهر/ سنة ': _dateTime.toString()),
-//                            SizedBox(width: 10.0,),
-//                            Padding(
-//                              padding: const EdgeInsets.only(right: 20.0,),
-//                              child: IconButton(
-//                                icon: Icon(Icons.calendar_today),
-//                                onPressed: (){
-//                                  showDatePicker(
-//                                      context: context,
-//                                      initialDate: DateTime.now(),
-//                                      firstDate: DateTime(1950),
-//                                      lastDate: DateTime(2222)
-//                                  ).then((data){
-//                                    setState(() {
-//                                      _dateTime = data;
-//                                    });
-//                                  });
-//                                },
-//                              ),
-//                            ),
-//                          ],
-//                        ),
-
-                        Stack(
-                          children: <Widget>[
-                            Transform.translate(
-                              offset: Offset(280.0, 8.0),
-                              child: Text(
-                                '*',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 30.0, right: 30.0),
-                              child: TextField(
-                                textAlign: TextAlign.right,
-                                decoration: InputDecoration(
-                                  hintText: " الاسم",
-                                  contentPadding: EdgeInsets.all(1.0),
-                                  hintStyle: TextStyle(
-                                    //fontFamily: 'Farsi-Simple-Bold',
-                                    fontSize: 18,
-                                    color: const Color(0xff000000),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
                         Stack(
                           children: <Widget>[
                             Transform.translate(
@@ -231,7 +175,6 @@ class _AllState extends State<All> {
                                   hintText: " الرقم القومي",
                                   contentPadding: EdgeInsets.all(1.0),
                                   hintStyle: TextStyle(
-                                    //fontFamily: 'Farsi-Simple-Bold',
                                     fontSize: 18,
                                     color: const Color(0xff000000),
                                   ),
@@ -275,11 +218,52 @@ class _AllState extends State<All> {
                         SizedBox(
                           height: 7,
                         ),
+                        Stack(
+                          children: <Widget>[
+                            Transform.translate(
+                              offset: Offset(235.0, 10.0),
+                              child: Text(
+                                '*',
+                                style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 30.0, right: 30.0),
+                              child: TextField(
+                                textAlign: TextAlign.right,
+                                decoration: InputDecoration(
+                                  hintText: " رقم التليفون",
+                                  contentPadding: EdgeInsets.all(1.0),
+                                  hintStyle: TextStyle(
+                                    //fontFamily: 'Farsi-Simple-Bold',
+                                    fontSize: 18,
+                                    color: const Color(0xff000000),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Padding(
                           padding:
                               const EdgeInsets.only(right: 30.0, left: 30.0),
                           child: Stack(
                             children: <Widget>[
+                              Transform.translate(
+                                offset: Offset(235.0, 10.0),
+                                child: Text(
+                                  '*',
+                                  style: TextStyle(
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
                               Row(
                                 textDirection: TextDirection.rtl,
                                 children: <Widget>[
@@ -300,7 +284,7 @@ class _AllState extends State<All> {
                                     ),
                                   ),
                                   SizedBox(
-                                    width: 20.0,
+                                    width: 15.0,
                                   ),
                                   Container(
                                     width: 150,
@@ -310,43 +294,47 @@ class _AllState extends State<All> {
                                       boxShadow: [
                                         BoxShadow(
                                             color: const Color(0x1e038add),
-                                            offset: Offset(5, 5),
-                                            blurRadius: 6)
+                                            offset: Offset(4, 4),
+                                            blurRadius: 0)
                                       ],
                                       borderRadius: BorderRadius.circular(30.0),
                                     ),
-                                    child: DropdownButtonFormField(
-                                      decoration: InputDecoration(
-                                        prefixIcon: Icon(
-                                          Icons.arrow_drop_down,
-                                          size: 30,
-                                          color: Colors.black,
-                                        ),
-                                        border: InputBorder.none,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 30,
                                       ),
-                                      //iconDisabledColor: Colors.white,
-                                      iconEnabledColor: Colors.white,
-//                                      hint: Text(
-//                                        "المدينة",
-//                                        style: TextStyle(
-//                                          //fontFamily: 'Farsi-Simple-Bold',
-//                                          fontSize: 10,
-//                                          color: const Color(0xff000000),
-//                                        ),
-//                                      ),
-                                      value: devalue,
-                                      items: <String>[
-                                        'القاهرة',
-                                        'الاسكندرية',
-                                        'الجيزة'
-                                      ].map<DropdownMenuItem<String>>(
-                                          (String value) {
-                                        return DropdownMenuItem<String>(
-                                          child: Text(value),
-                                          value: value,
-                                        );
-                                      }).toList(),
-                                      onChanged: changeValue,
+                                      child: DropdownButtonHideUnderline(
+                                        child: DropdownButton(
+                                          iconEnabledColor: Colors.white,
+                                          hint: Padding(
+                                            padding: const EdgeInsets.only(left: 20),
+                                            child: Text('أخترالمدينة', style: TextStyle(
+                                              fontFamily: 'Farsi-Simple-Bold',
+                                              color: Colors.grey.shade400,
+                                              fontSize: 18,
+                                            ),),
+                                          ),
+                                          value: devalue,
+                                          items: <String>[
+                                            'القاهرة',
+                                            'الاسكندرية',
+                                            'الجيزة'
+                                          ].map<DropdownMenuItem<String>>(
+                                              (String value) {
+                                            return DropdownMenuItem<String>(
+                                              child: Align(
+                                                  child: Text(
+                                                value,
+                                                style: TextStyle(
+                                                    fontSize: 18,
+                                                    color: Colors.black),
+                                              )),
+                                              value: value,
+                                            );
+                                          }).toList(),
+                                          onChanged: changeValue,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -354,8 +342,90 @@ class _AllState extends State<All> {
                             ],
                           ),
                         ),
+//                        SizedBox(
+//                          height: 5.0,
+//                        ),
+                        Stack(
+                          children: <Widget>[
+                            Transform.translate(
+                              offset: Offset(200.0, 7.0),
+                              child: Text(
+                                '*',
+                                style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 10, left: 10),
+                              child: ListTile(
+                                title: Text(
+                                  '${_dateTime.year} / ${_dateTime.month} / ${_dateTime.day} : تاريخ الميلاد ',
+                                  style:
+                                  TextStyle(color: Colors.black, fontSize: 18),
+                                ),
+                                leading: IconButton(
+                                  icon: Icon(Icons.calendar_today, size: 30,),
+                                  color: Color(0xFF0064BF),
+                                  onPressed: () {
+                                    showDatePicker(
+                                        context: context,
+                                        initialDate: DateTime(2020),
+                                        firstDate: DateTime(1950),
+                                        lastDate: DateTime.now(),
+                                        initialDatePickerMode: DatePickerMode.year,
+                                        builder:
+                                            (BuildContext context, Widget child) {
+                                          return Theme(
+                                            data: ThemeData(
+                                              primaryColor: Colors.black,
+                                              accentColor: Color(0xFF0064BF),
+                                              buttonBarTheme: ButtonBarThemeData(
+                                                buttonTextTheme:
+                                                ButtonTextTheme.accent,
+                                              ),
+                                            ),
+                                            child: child,
+                                          );
+                                        }).then((data) {
+                                      setState(() {
+                                        _dateTime = data;
+                                      });
+                                    });
+                                  },
+                                ),
+                                onTap: () {
+                                  showDatePicker(
+                                      context: context,
+                                      initialDate: DateTime(2020),
+                                      firstDate: DateTime(1950),
+                                      lastDate: DateTime.now(),
+                                      initialDatePickerMode: DatePickerMode.year,
+                                      builder:
+                                          (BuildContext context, Widget child) {
+                                        return Theme(
+                                          data: ThemeData(
+                                            primaryColor: Colors.black,
+                                            accentColor: Color(0xFF0064BF),
+                                            buttonBarTheme: ButtonBarThemeData(
+                                              buttonTextTheme:
+                                              ButtonTextTheme.accent,
+                                            ),
+                                          ),
+                                          child: child,
+                                        );
+                                      }).then((data) {
+                                    setState(() {
+                                      _dateTime = data;
+                                    });
+                                  });
+                                },
+                              ),
+                            ),
+                          ],
+                        ),
                         SizedBox(
-                          height: 7.0,
+                          height: 5.0,
                         ),
                         Padding(
                           padding:
@@ -400,37 +470,9 @@ class _AllState extends State<All> {
                             ],
                           ),
                         ),
-                        Stack(
-                          children: <Widget>[
-                            Transform.translate(
-                              offset: Offset(235.0, 10.0),
-                              child: Text(
-                                '*',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 30.0, right: 30.0),
-                              child: TextField(
-                                textAlign: TextAlign.right,
-                                decoration: InputDecoration(
-                                  hintText: " رقم التليفون",
-                                  contentPadding: EdgeInsets.all(1.0),
-                                  hintStyle: TextStyle(
-                                    //fontFamily: 'Farsi-Simple-Bold',
-                                    fontSize: 18,
-                                    color: const Color(0xff000000),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
+
                         SizedBox(
-                          height: 7.0,
+                          height: 5.0,
                         ),
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
@@ -505,8 +547,9 @@ class _AllState extends State<All> {
                             ),
                           ),
                         ),
+
                         SizedBox(
-                          height: 7.0,
+                          height: 3,
                         ),
                         Padding(
                           padding:

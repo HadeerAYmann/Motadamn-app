@@ -34,7 +34,7 @@ void main(){
  // home: Peneficial(),
    // home: AllCases(),
    // home: AbroveCases(),
-   //home: AllBeneficial(),
+   home: AllBeneficial(),
    //  home: Screen1(),
   //home: All(),
    // home: Check(),
@@ -44,53 +44,6 @@ void main(){
     //home: Program1(),
     //home: Plug(),
     //home: Screen6(),
-    home: DatePicker(),
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale("ar"), // OR Locale('ar', 'AE') OR Other RTL locales
-      ],
-      locale: Locale("ar") // OR Locale('ar', 'AE') OR Other RTL locales,
+   // home: DatePicker(),
   ));
 }
-//
-//IconButton(
-//icon: Icon(Icons.calendar_today),
-//onPressed: () async{
-//final date = await showDatePicker(
-//context: context,
-//initialDate: DateTime(1985, 1, 1),
-//firstDate: DateTime(1985, 1, 1),
-//lastDate: DateTime.now(),
-//initialDatePickerMode: DatePickerMode.year,
-//builder: (BuildContext context, Widget child){
-//return Theme(
-//data: ThemeData(
-//primaryColor: Colors.black,
-//accentColor: Colors.blue,
-//buttonBarTheme: ButtonBarThemeData(
-//buttonTextTheme: ButtonTextTheme.accent,
-//),
-//),
-//child: child,
-//);
-//}
-//);
-//if (date != null){
-//var formatter = new DateFormat('yyyy/dd/MM');
-//_pickDateController.text = formatter.format(date);
-//}
-//},
-//),]
-//),
-//Container(
-//margin: EdgeInsets.only(left: 20, right: 20),
-//child: TextFormField(
-//style: TextStyle(color: Colors.blueGrey),
-//cursorColor: Colors.redAccent,
-//controller: _pickDateController,
-//readOnly: true,
-//),
-//),

@@ -707,6 +707,15 @@ class _CstomState extends State<Cstom> {
           children: <Widget>[
             Column(
               children: <Widget>[
+                Transform.translate(
+                  offset: Offset(-30.0, 32.0),
+                  child: Text(
+                    '*',
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(left: 70.0),
                   child: DropdownButtonFormField(
@@ -792,6 +801,15 @@ class _CstomState extends State<Cstom> {
                     value: value1,
                   ),
                 ),
+                Transform.translate(
+                  offset: Offset(-30.0, 32.0),
+                  child: Text(
+                    '*',
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(left: 70.0),
                   child: DropdownButtonFormField(
@@ -830,6 +848,15 @@ class _CstomState extends State<Cstom> {
                     iconDisabledColor: Colors.white,
                   ),
                 ),
+                Transform.translate(
+                  offset: Offset(80.0, 32.0),
+                  child: Text(
+                    '*',
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(right: 20.0, left: 20.0),
                   child: Padding(
@@ -850,8 +877,14 @@ class _CstomState extends State<Cstom> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
+                Transform.translate(
+                  offset: Offset(80.0, 32.0),
+                  child: Text(
+                    '*',
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
                 TextFormField(
                     textAlign: TextAlign.right,
@@ -870,9 +903,6 @@ class _CstomState extends State<Cstom> {
                         ),
                       ),
                     )),
-                SizedBox(
-                  height: 10,
-                ),
                 RaisedButton(
                   onPressed: () {
                     Navigator.pop(context);
