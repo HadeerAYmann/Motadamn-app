@@ -9,15 +9,15 @@ class Program extends StatefulWidget {
 }
 
 class _ProgramState extends State<Program> {
-  String _value;
-  int _currentIndex = 0;
-  var radio1 = 0;
-  String selectedvalue;
-  void radiochecked(int val) {
+  void drop(String value){
     setState(() {
-      radio1 = val;
+      _value = value;
+      Fluttertoast.showToast(msg: value);
     });
   }
+  String _value;
+  int _currentIndex = 0;
+  String selectedvalue;
   @override
   Widget build(BuildContext context) {
     var selected;
@@ -54,7 +54,7 @@ class _ProgramState extends State<Program> {
                     bottomRight: Radius.circular(40.0),
                     bottomLeft: Radius.circular(40.0),
                   ),
-                  color: const Color(0x60000000),
+                  color: const Color(0x90000000),
                   border:
                       Border.all(width: 1.0, color: const Color(0x33707070)),
                 ),
@@ -73,19 +73,19 @@ class _ProgramState extends State<Program> {
                 ),
               ),
               Positioned(
-                left: 85,
-                bottom: 50,
+                left: 40,
+                bottom: 40,
                 child: Column(
                   children: <Widget>[
                     Text(
-                      "مشاريع الخير هنسعدك لتوفير المستلزمات\n اللازمة لحياة أفضل  ",
+                      "مشاريع الخير تهتم بتنميه الاسره المصريه وتوفير \nحياه افضل    ",
                       style: TextStyle(
                         fontFamily: 'Century',
                         fontSize: 18,
                         color: const Color(0xffffffff),
                         fontWeight: FontWeight.w700,
                       ),
-                      textAlign: TextAlign.right,
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
@@ -232,54 +232,53 @@ class _ProgramState extends State<Program> {
                                       blurRadius: 10)
                                 ],
                               ),
-                              child: DropdownButton<String>(
-                                      value: _value,
-                                      isExpanded: true,
-                                      icon: Icon(Icons.arrow_drop_down,size: 30),
-                                      items: [
-                                        DropdownMenuItem<String>(
-                                          child: Row(
-                                            children: <Widget>[
-                                              Padding(padding: EdgeInsets.only(left: 28)),
-                                              Text('لا يوجد',style: TextStyle(fontSize: 20,fontFamily: 'Simple',color: Color(0x60000000),),),
-                                            ],
-                                          ),
-                                        ),
+                              child: DropdownButtonHideUnderline(
+                                child: DropdownButton(
+                                  value: _value,
+                                  isExpanded: true,
+                                  icon: Icon(Icons.arrow_drop_down,size: 30),
+                                  items: [
+                                    DropdownMenuItem<String>(
+                                      child: Row(
+                                        children: <Widget>[
+                                          Padding(padding: EdgeInsets.only(left: 28)),
+                                          Text('لا يوجد',style: TextStyle(fontSize: 20,fontFamily: 'Simple',color: Color(0x60000000),),),
+                                        ],
+                                      ),
+                                    ),
 
-                                        DropdownMenuItem<String>(
-                                          child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Text('الاسكندريه',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
-                                            ],
-                                          ),
-                                          value: "1",
-                                        ),
-                                        DropdownMenuItem<String>(
-                                          child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Text('القاهره',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
-                                            ],
-                                          ),
-                                          value: "2",
-                                        ),
-                                        DropdownMenuItem<String>(
-                                          child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Text('الجيزه',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
-                                            ],
-                                          ),
-                                          value: "3",
-                                        ),
-                                      ],
-                                      onChanged: (String value) {
-                                        setState(() {
-                                          _value = value;
-                                          Fluttertoast.showToast(msg: value);
-                                        });
-                                      },
+                                    DropdownMenuItem<String>(
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text('الاسكندريه',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                      value: "1",
+                                    ),
+                                    DropdownMenuItem<String>(
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text('القاهره',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                      value: "2",
+                                    ),
+                                    DropdownMenuItem<String>(
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text('الجيزه',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                                      value: "3",
+                                    ),
+                                  ],
+                                  onChanged: drop
+
+                                ),
+
                                     ),
                             ),
                           ],
@@ -300,20 +299,6 @@ class _ProgramState extends State<Program> {
                       DropdownMenuItem<String>(
                         child: Row(
                           children: <Widget>[
-//                            Radio(
-//                              value: 0,
-//                              groupValue: radio1,
-//                              onChanged: radiochecked,
-//                              activeColor: Color(0xFF0064BF),
-//                            ),
-//                            Text("ذكر"),
-//                            Radio(
-//                              value: 1,
-//                              groupValue: radio1,
-//                              onChanged: radiochecked,
-//                              activeColor: Color(0xFF0064BF),
-//                            ),
-//                            Text("انثي"),
                             Icon(Icons.radio_button_checked),
                             SizedBox(
                               width: 5,
@@ -337,7 +322,6 @@ class _ProgramState extends State<Program> {
                             ),
                           ],
                         ),
-                        value: "7",
                       ),
                     ],
                     onChanged: (String value) {

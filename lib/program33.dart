@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Program33 extends StatefulWidget {
   @override
@@ -6,7 +8,15 @@ class Program33 extends StatefulWidget {
 }
 
 class _ProgramState extends State<Program33> {
+  void drop(String value){
+    setState(() {
+      _value = value;
+      Fluttertoast.showToast(msg: value);
+    });
+  }
+  String _value;
   int _currentIndex = 0;
+  String selectedvalue;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +52,7 @@ class _ProgramState extends State<Program33> {
                     bottomRight: Radius.circular(40.0),
                     bottomLeft: Radius.circular(40.0),
                   ),
-                  color: const Color(0x33000000),
+                  color: const Color(0x60000000),
                   border:
                   Border.all(width: 1.0, color: const Color(0x33707070)),
                 ),
@@ -61,19 +71,19 @@ class _ProgramState extends State<Program33> {
                 ),
               ),
               Positioned(
-                left: 90,
-                bottom: 50,
+                left: 75,
+                bottom: 20,
                 child: Column(
                   children: <Widget>[
                     Text(
-                      "مرضى الاورام هنسعدك لتوفير المستلزمات\n اللازمة لحياة أفضل  ",
+                      "هدفنا من علاج مرضى الاورام تخفيف الآلام\n وقتل الخلايا السرطانيه الذى تعانى منه كى\n يمنحك امكانيه عيش حياه طبيعيه  ",
                       style: TextStyle(
                         fontFamily: 'Century',
                         fontSize: 18,
                         color: const Color(0xffffffff),
                         fontWeight: FontWeight.w700,
                       ),
-                      textAlign: TextAlign.right,
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
@@ -83,15 +93,249 @@ class _ProgramState extends State<Program33> {
           SizedBox(
             height: 2,
           ),
-          Container(
-            padding: EdgeInsets.only(left: 20, right: 50),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Image(image: AssetImage('images/filter.png'),),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 30),
+                child: Container(
+                  width: 110,
+                  child: DropdownButtonFormField<String>(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                    ),
+                    value: selectedvalue,
+                    isExpanded: true,
+                    icon: Icon(
+                      FontAwesomeIcons.filter,
+                      color: Color(0xff0064BF),
+                      size: 30,
+                    ),
+                    items: [
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(width: 10,),
+                            Text(
+                              'اظهر الحالات',
+                              style:
+                              TextStyle(fontSize: 18, fontFamily: 'Simple',color: Color(0xff86b9f7)),
+                            )
+                          ],
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: [
+                            Icon(Icons.check_box),
+                            Text(
+                              'الاقدم',
+                              style:
+                              TextStyle(fontSize: 16, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        value: "1",
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.check_box_outline_blank),
+                            Text(
+                              'الاحدث',
+                              style:
+                              TextStyle(fontSize: 16, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        value: "2",
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.check_box_outline_blank),
+                            Text(
+                              'اقل سنا',
+                              style:
+                              TextStyle(fontSize: 16, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        value: "3",
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.check_box_outline_blank),
+                            Text(
+                              'اكبر سنا',
+                              style:
+                              TextStyle(fontSize: 16, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        value: "4",
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.check_box_outline_blank),
+                            Text(
+                              ' اقل مبلغ',
+                              style:
+                              TextStyle(fontSize: 16, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        value: "5",
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.check_box_outline_blank),
+                            Text(
+                              'اكبر مبلغ',
+                              style:
+                              TextStyle(fontSize: 16, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        value: "6",
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            Text(
+                              'المدينه ',
+                              style:
+                              TextStyle(fontSize: 20, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: 115.3,
+                              height: 45.9,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20.0),
+                                color: Color(0xf0ffffff),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Color(0x63038add),
+                                      offset: Offset(6, 6),
+                                      blurRadius: 10)
+                                ],
+                              ),
+                              child: DropdownButtonHideUnderline(
+                                child: DropdownButton(
+                                    value: _value,
+                                    isExpanded: true,
+                                    icon: Icon(Icons.arrow_drop_down,size: 30),
+                                    items: [
+                                      DropdownMenuItem<String>(
+                                        child: Row(
+                                          children: <Widget>[
+                                            Padding(padding: EdgeInsets.only(left: 28)),
+                                            Text('لا يوجد',style: TextStyle(fontSize: 20,fontFamily: 'Simple',color: Color(0x60000000),),),
+                                          ],
+                                        ),
+                                      ),
 
-                Text(
-                  'حالات مرضى الاورام',
+                                      DropdownMenuItem<String>(
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text('الاسكندريه',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
+                                          ],
+                                        ),
+                                        value: "1",
+                                      ),
+                                      DropdownMenuItem<String>(
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text('القاهره',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
+                                          ],
+                                        ),
+                                        value: "2",
+                                      ),
+                                      DropdownMenuItem<String>(
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: <Widget>[
+                                            Text('الجيزه',style: TextStyle(fontSize: 18,fontFamily: 'Century',fontWeight: FontWeight.bold),),
+                                          ],
+                                        ),
+                                        value: "3",
+                                      ),
+                                    ],
+                                    onChanged: drop
+
+                                ),
+
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            Text(
+                              'النوع ',
+                              style:
+                              TextStyle(fontSize: 20, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      DropdownMenuItem<String>(
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.radio_button_checked),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(
+                              'انثى',
+                              style:
+                              TextStyle(fontSize: 18, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(Icons.radio_button_unchecked),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(
+                              'ذكر',
+                              style:
+                              TextStyle(fontSize: 18, fontFamily: 'Century',fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                    onChanged: (String value) {
+                      setState(() {
+                        selectedvalue=value;
+                        Fluttertoast.showToast(msg: value);
+                      });
+                    },
+
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 55),
+                child: Text(
+                  'حالات مرضى الأورام',
                   style: TextStyle(
                     fontFamily: 'Simple',
                     fontSize: 25,
@@ -99,9 +343,10 @@ class _ProgramState extends State<Program33> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
+
           Expanded(
             child: GridView.count(
               crossAxisCount: 2,
@@ -817,44 +1062,95 @@ class _ProgramState extends State<Program33> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex:_currentIndex,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.green[600],
-        unselectedItemColor: Colors.blue,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.more_horiz),
-            title: Text('المزيد'),
+      bottomNavigationBar: Container(
+        //height: 100.0,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40.0),
+                topRight: Radius.circular(40.0),
+                bottomRight: Radius.circular(40.0),
+                bottomLeft: Radius.circular(40.0)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                spreadRadius: 0,
+                blurRadius: 10,
+              ),
+            ],
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.people),
-            title: Text('الملف الشخصى'),
-          ),
-          BottomNavigationBarItem(
-            icon: Container(
-              child: CircleAvatar(backgroundColor: Colors.green,
-                  child: Icon(Icons.add, color: Colors.white,)),
-
+          child: ClipRRect(
+            borderRadius: BorderRadius.only(
+                topRight: Radius.circular(30.0),
+                topLeft: Radius.circular(30.0),
+                bottomLeft: Radius.circular(30),
+                bottomRight: Radius.circular(30)),
+            child: BottomNavigationBar(
+              currentIndex: _currentIndex,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: Color(0xff7FD858),
+              unselectedItemColor: Color(0xff0064BF),
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.more_horiz),
+                  title: Text('المزيد',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.people),
+                  title: Text('الملف الشخصى',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                  icon: Container(
+                    child: CircleAvatar(
+                        backgroundColor: const Color(0xff7fd858),
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        )),
+                  ),
+                  title: Text('تبرع الان',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.favorite_border),
+                  title: Text('الحالات',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.home),
+                    title: Text(
+                      'الصفحة الرئيسية',
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w900,
+                          fontFamily: 'Century'),
+                    )),
+              ],
+              onTap: (index) {
+                setState(() {
+                  _currentIndex = index;
+                });
+              },
             ),
-            title: Text('تبرع الان'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_border),
-            title: Text('الحالات'),
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              title: Text('الصفحة الرئيسية', style: TextStyle(fontSize: 9.5),
-              )
-          ),
-        ],
-        onTap: (index){
-          setState(() {
-            _currentIndex= index;
-          });
-        },
-      ),
+          )),
+
     );
   }
 }
