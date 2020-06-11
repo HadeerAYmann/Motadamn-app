@@ -43,7 +43,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 25.0,
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             color: Color(0xFF0064BF),
                             fontWeight: FontWeight.w700,
                           ),
@@ -106,7 +106,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
@@ -117,6 +117,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
+                            fontFamily: 'Century',
                           ),
                         ),
                       ],
@@ -133,7 +134,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
@@ -142,6 +143,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "29904190202157",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -160,7 +162,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
@@ -169,6 +171,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "01269734885",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -187,7 +190,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
@@ -196,6 +199,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "شارع مصطفي كامل",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -214,7 +218,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
@@ -223,6 +227,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "الاسكندرية",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -241,7 +246,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
@@ -250,6 +255,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "5/12/1948",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -266,6 +272,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           ": الحالة الأجتماعية",
                           textAlign: TextAlign.right,
                           style: TextStyle(
+                              fontFamily: 'Century',
                               color: Colors.black,
                               fontSize: 20,
                               fontWeight: FontWeight.w600),
@@ -276,6 +283,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "متزوج",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -293,6 +301,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                           textAlign: TextAlign.right,
                           style: TextStyle(
                               color: Colors.black,
+                              fontFamily: 'Century',
                               fontSize: 20,
                               fontWeight: FontWeight.w600),
                         ),
@@ -302,6 +311,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                         Text(
                           "ذكر",
                           style: TextStyle(
+                            fontFamily: 'Century',
                             color: Colors.black,
                             fontSize: 20,
                           ),
@@ -349,7 +359,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                   title: Text(
                     'المزيد',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -359,7 +369,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                   title: Text(
                     'الملف الشخصى',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -377,7 +387,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                   title: Text(
                     'تبرع الان',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,
@@ -388,7 +398,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                   title: Text(
                     'الحالات',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -398,7 +408,7 @@ class _InfoBeneficialState extends State<InfoBenef> {
                   title: Text(
                     'الصفحة الرئيسية',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),

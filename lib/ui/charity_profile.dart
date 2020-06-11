@@ -67,7 +67,7 @@ class _ProfileState extends State<Profile> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 25.0,
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontWeight: FontWeight.w700,
                               ),
@@ -89,7 +89,7 @@ class _ProfileState extends State<Profile> {
                           "جمعية مصر الخير",
                           style: TextStyle(
                             color: Color(0xff038ADD),
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             fontSize: 30,
                           ),
                         ),
@@ -100,7 +100,7 @@ class _ProfileState extends State<Profile> {
                           "متعة العطاء",
                           style: TextStyle(
                             color: Color(0xff84B7F6),
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             fontSize: 25,
                           ),
                         ),
@@ -139,8 +139,8 @@ class _ProfileState extends State<Profile> {
                       child: IconButton(
                         icon: Icon(Icons.camera_alt),
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> Peneficial(),
-                          ));
+//                          Navigator.push(context, MaterialPageRoute(builder: (context)=> Peneficial(),
+//                          ));
                         },
                         color: Color(0xff61E7E2),
                         iconSize: 30,
@@ -178,7 +178,7 @@ class _ProfileState extends State<Profile> {
                 child: Text(
                   'اضافه مستفيد',
                   style: TextStyle(
-                    fontFamily: 'Farsi-Simple-Bold',
+                    fontFamily: 'Simple',
                     fontSize: 25,
                     color: const Color(0xffffffff),
                     fontWeight: FontWeight.w700,
@@ -197,9 +197,9 @@ class _ProfileState extends State<Profile> {
                     margin: EdgeInsets.all(12.0),
                     child: RaisedButton(
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context)=> Peneficial(),
-                            ));
+//                        Navigator.push(context,
+//                            MaterialPageRoute(builder: (context)=> Peneficial(),
+//                            ));
                       },
                       child: Row(
                         children: <Widget>[
@@ -207,7 +207,7 @@ class _ProfileState extends State<Profile> {
                             "جميع المستفيدين",
                             style: TextStyle(
                               color: Colors.white,
-                              fontFamily: "Farsi-Simple-Bold",
+                              fontFamily: "Simple",
                               fontSize: 30,
                               fontWeight: FontWeight.w500,
                             ),
@@ -215,9 +215,9 @@ class _ProfileState extends State<Profile> {
                           IconButton(
                             padding: EdgeInsets.only(left: 20),
                             onPressed: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context)=> Peneficial(),
-                                  ));
+//                              Navigator.push(context,
+//                                  MaterialPageRoute(builder: (context)=> Peneficial(),
+//                                  ));
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios,
@@ -260,7 +260,7 @@ class _ProfileState extends State<Profile> {
                               "جميع االحالات",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 fontSize: 30,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -315,28 +315,28 @@ class _ProfileState extends State<Profile> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.more_horiz,),
-                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.people),
-                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Container(
                     child: CircleAvatar(backgroundColor: Color(0xff7FD858),
                       child: Icon(Icons.add, color: Colors.white,),),
                   ),
-                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,),
 
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.favorite_border),
-                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                   ),
                 ),
               ],

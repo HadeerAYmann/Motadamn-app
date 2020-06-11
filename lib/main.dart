@@ -16,9 +16,11 @@ import 'package:ui_app/ui/screen3.dart';
 import 'package:ui_app/ui/screen4.dart';
 import 'package:ui_app/ui/screen5.dart';
 import 'package:ui_app/ui/screen6.dart';
+import 'package:ui_app/ui/sign_in1.dart';
+import 'package:ui_app/ui/sign_in2.dart';
 import 'package:ui_app/ui/waiting.dart';
 import 'package:ui_app/ui/waiting_cases.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+
 
 void main(){
   runApp(MaterialApp(
@@ -26,7 +28,7 @@ void main(){
     debugShowCheckedModeBanner: false,
     //home: Waiting(),
    // home: Drop(),
-    // home: WaitingCases(),
+     home: WaitingCases(),
     //home: InfoBenef(),
     //home: InfoCases(),
    // home: InfoBeneficial(),
@@ -34,7 +36,8 @@ void main(){
  // home: Peneficial(),
    // home: AllCases(),
    // home: AbroveCases(),
-   home: AllBeneficial(),
+   //home: AllBeneficial(),
+    //home: SignIn1(),
    //  home: Screen1(),
   //home: All(),
    // home: Check(),

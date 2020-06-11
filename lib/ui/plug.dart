@@ -29,7 +29,7 @@ class _PlugState extends State<Plug> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25.0,
-                    fontFamily: "Farsi-Simple-Bold",
+                    fontFamily: "Simple",
                     color: Color(0xFF0064BF),
                     fontWeight: FontWeight.w700,
                   ),
@@ -96,7 +96,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'الدعم الاجتماعي',
                         style: TextStyle(
-                          fontFamily: 'Farsi-Simple-Bold',
+                          fontFamily: 'Simple',
                           fontSize: 20,
                           color: const Color(0xff7fd858),
                           fontWeight: FontWeight.w700,
@@ -112,7 +112,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'رعاية المسنين\nكفالة التيم\nالغارمين\nتوفير ملابس\nتوزيع شنط غذائية\nزواج اليتيمات\nخدمات للمكفوفين ',
                         style: TextStyle(
-                          fontFamily: 'Century Gothic',
+                          fontFamily: 'Century',
                           fontSize: 11,
                           color: const Color(0xff038add),
                           height: 2,
@@ -181,7 +181,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'أوجه الزكاة',
                         style: TextStyle(
-                          fontFamily: 'Farsi-Simple-Bold',
+                          fontFamily: 'Simple',
                           fontSize: 20,
                           color: const Color(0xff7fd858),
                           fontWeight: FontWeight.w700,
@@ -197,7 +197,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         ' زكاة الأئتمان\n زكاة الديون \n زكاة الأراضي \n زكاة الحيوان \n زكاة الركاز\nزكاة التجارة\n زكاة الفطر ',
                         style: TextStyle(
-                          fontFamily: 'Century Gothic',
+                          fontFamily: 'Century',
                           fontSize: 11,
                           color: const Color(0xff038add),
                           height: 2,
@@ -270,7 +270,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'التنمية العمرانية',
                         style: TextStyle(
-                          fontFamily: 'Farsi-Simple-Bold',
+                          fontFamily: 'Simple',
                           fontSize: 20,
                           color: const Color(0xff7fd858),
                           fontWeight: FontWeight.w700,
@@ -286,7 +286,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'محطة تنقية المياه \nتركيب عدادات المياه\nالغارمين\nإعمار المنازل',
                         style: TextStyle(
-                          fontFamily: 'Century Gothic',
+                          fontFamily: 'Century',
                           fontSize: 11,
                           color: const Color(0xff038add),
                           height: 2,
@@ -355,7 +355,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'التمكين الأقتصادي',
                         style: TextStyle(
-                          fontFamily: 'Farsi-Simple-Bold',
+                          fontFamily: 'Simple',
                           fontSize: 20,
                           color: const Color(0xff7fd858),
                           fontWeight: FontWeight.w700,
@@ -371,7 +371,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'القرض الحسن \nمشاريع الخير\nالتأهيل والتوظيف\nتوزيع رؤوس المواشي',
                         style: TextStyle(
-                          fontFamily: 'Century Gothic',
+                          fontFamily: 'Century',
                           fontSize: 11,
                           color: const Color(0xff038add),
                           height: 2,
@@ -445,7 +445,7 @@ class _PlugState extends State<Plug> {
                       child: Text(
                         'الرعاية الصحية',
                         style: TextStyle(
-                          fontFamily: 'Farsi-Simple-Bold',
+                          fontFamily: 'Simple',
                           fontSize: 25,
                           color: const Color(0xff7fd858),
                           fontWeight: FontWeight.w700,
@@ -466,7 +466,7 @@ class _PlugState extends State<Plug> {
                             child: Text(
                               'مكافحة ضعف وفقدان البصر \nعلاج ذوي الأحتياجات الخاصة\nعلاج ضحايا وحوادث الحروق\nتوفير الأجهزة التعويضية',
                               style: TextStyle(
-                                fontFamily: 'Century Gothic',
+                              fontFamily: 'Century',
                                 fontSize: 13,
                                 color: const Color(0xff038add),
                                 height: 2,
@@ -479,7 +479,7 @@ class _PlugState extends State<Plug> {
                             child: Text(
                               'علاج الأدمان \nحضانات الأطفال\nإجراء العمليات الجراحية\nإجراء التحاليل والأشاعات \nوحدات الغسيل الكلوي',
                               style: TextStyle(
-                                fontFamily: 'Century Gothic',
+                                fontFamily: 'Century',
                                 fontSize: 13,
                                 color: const Color(0xff038add),
                                 height: 2,
@@ -514,28 +514,28 @@ class _PlugState extends State<Plug> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.more_horiz,),
-                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.people),
-                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Container(
                     child: CircleAvatar(backgroundColor: Color(0xff7FD858),
                       child: Icon(Icons.add, color: Colors.white,),),
                   ),
-                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,),
 
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.favorite_border),
-                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                   ),
                 ),
               ],

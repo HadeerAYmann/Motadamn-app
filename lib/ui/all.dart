@@ -70,7 +70,7 @@ class _AllState extends State<All> {
                     style: TextStyle(
                         color: Color(0xFF0064BF),
                         fontSize: 25,
-                        fontFamily: "Farsi-Simple-Bold",
+                        fontFamily: "Simple",
                         fontWeight: FontWeight.w700),
                   ),
                 ),
@@ -107,6 +107,7 @@ class _AllState extends State<All> {
                               color: Colors.blueGrey,
                               fontSize: 18,
                               fontWeight: FontWeight.w700,
+                                fontFamily: 'Century'
                             ),
                           ),
                         ),
@@ -143,7 +144,7 @@ class _AllState extends State<All> {
                                   hintText: " الاسم",
                                   contentPadding: EdgeInsets.all(1.0),
                                   hintStyle: TextStyle(
-                                    //fontFamily: 'Farsi-Simple-Bold',
+                                    fontFamily: 'Century',
                                     fontSize: 18,
                                     color: const Color(0xff000000),
                                   ),
@@ -176,6 +177,7 @@ class _AllState extends State<All> {
                                   contentPadding: EdgeInsets.all(1.0),
                                   hintStyle: TextStyle(
                                     fontSize: 18,
+                                      fontFamily: 'Century',
                                     color: const Color(0xff000000),
                                   ),
                                 ),
@@ -206,7 +208,7 @@ class _AllState extends State<All> {
                                   hintText: " العنوان",
                                   contentPadding: EdgeInsets.all(1.0),
                                   hintStyle: TextStyle(
-                                    //fontFamily: 'Farsi-Simple-Bold',
+                                    fontFamily: 'Century',
                                     fontSize: 18,
                                     color: const Color(0xff000000),
                                   ),
@@ -238,7 +240,7 @@ class _AllState extends State<All> {
                                   hintText: " رقم التليفون",
                                   contentPadding: EdgeInsets.all(1.0),
                                   hintStyle: TextStyle(
-                                    //fontFamily: 'Farsi-Simple-Bold',
+                                    fontFamily: 'Century',
                                     fontSize: 18,
                                     color: const Color(0xff000000),
                                   ),
@@ -272,6 +274,7 @@ class _AllState extends State<All> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 18,
+                                        fontFamily: 'Century'
                                     ),
                                   ),
                                   Transform.translate(
@@ -309,7 +312,7 @@ class _AllState extends State<All> {
                                           hint: Padding(
                                             padding: const EdgeInsets.only(left: 20),
                                             child: Text('أخترالمدينة', style: TextStyle(
-                                              fontFamily: 'Farsi-Simple-Bold',
+                                              fontFamily: 'Simple',
                                               color: Colors.grey.shade400,
                                               fontSize: 18,
                                             ),),
@@ -327,7 +330,8 @@ class _AllState extends State<All> {
                                                 value,
                                                 style: TextStyle(
                                                     fontSize: 18,
-                                                    color: Colors.black),
+                                                    color: Colors.black,
+                                                    fontFamily: 'Century'),
                                               )),
                                               value: value,
                                             );
@@ -362,7 +366,7 @@ class _AllState extends State<All> {
                                 title: Text(
                                   '${_dateTime.year} / ${_dateTime.month} / ${_dateTime.day} : تاريخ الميلاد ',
                                   style:
-                                  TextStyle(color: Colors.black, fontSize: 18),
+                                  TextStyle(color: Colors.black, fontSize: 18, fontFamily: 'Century'),
                                 ),
                                 leading: IconButton(
                                   icon: Icon(Icons.calendar_today, size: 30,),
@@ -449,6 +453,7 @@ class _AllState extends State<All> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 18,
+                                        fontFamily: 'Century'
                                     ),
                                   ),
                                   Radio(
@@ -499,6 +504,7 @@ class _AllState extends State<All> {
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
+                                          fontFamily: 'Century'
                                       ),
                                     ),
                                     Radio(
@@ -562,6 +568,7 @@ class _AllState extends State<All> {
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 18,
+                                    fontFamily: 'Century'
                                 ),
                               ),
                               SizedBox(
@@ -604,7 +611,7 @@ class _AllState extends State<All> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'Farsi-Simple-Bold',
+                    fontFamily: 'Simple',
                     fontSize: 25,
                     fontWeight: FontWeight.w700,
                   ),
@@ -648,7 +655,7 @@ class _AllState extends State<All> {
                   title: Text(
                     'المزيد',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -658,7 +665,7 @@ class _AllState extends State<All> {
                   title: Text(
                     'الملف الشخصى',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -676,7 +683,7 @@ class _AllState extends State<All> {
                   title: Text(
                     'تبرع الان',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,
@@ -687,7 +694,7 @@ class _AllState extends State<All> {
                   title: Text(
                     'الحالات',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -697,7 +704,7 @@ class _AllState extends State<All> {
                   title: Text(
                     'الصفحة الرئيسية',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),

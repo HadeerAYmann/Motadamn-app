@@ -46,7 +46,7 @@ class _WaitingState extends State<Waiting> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 25.0,
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             color: Color(0xFF0064BF),
                             fontWeight: FontWeight.w600,
                           ),
@@ -113,6 +113,7 @@ class _WaitingState extends State<Waiting> {
                                 ": الرقم القومي",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -131,6 +132,7 @@ class _WaitingState extends State<Waiting> {
                                   child: Text(
                                     "29904190202157",
                                     style: TextStyle(
+                                      fontFamily: 'Century',
                                       color: Color(0xff038ADD),
                                       fontSize: 18,
                                     ),
@@ -163,6 +165,7 @@ class _WaitingState extends State<Waiting> {
                                 child: Text(
                                   ": وصف الحالة",
                                   style: TextStyle(
+                                      fontFamily: 'Century',
                                       color: Colors.black,
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600),
@@ -171,6 +174,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "تحتاج الي 4000 جنيه شهريا\n لتعيش حياة كريمة",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -186,6 +190,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 ": المبلغ المطلوب",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -196,6 +201,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "4000",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -214,6 +220,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 ": نسبة التبرع",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -224,6 +231,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "65%",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -242,6 +250,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "هل يوجد أفراد أسرة؟",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -252,6 +261,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "أقارب مباشرين (اخوات-أبناء..)",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -271,6 +281,7 @@ class _WaitingState extends State<Waiting> {
                                 " ما قيمة الدخل؟",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -281,6 +292,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "من 500 الي 1000 جنيها",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -299,6 +311,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "هل لديه مرض دائم أو خطير؟",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -309,6 +322,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "لا",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -329,6 +343,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "هل لديه ممتلكات (منزل-عربية)؟",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -339,6 +354,7 @@ class _WaitingState extends State<Waiting> {
                               Text(
                                 "نعم",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -355,6 +371,7 @@ class _WaitingState extends State<Waiting> {
                             Text(
                               "هل يحتاج الي رعاية خاصة(لا يستطيع التحرك..)؟",
                               style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w600),
@@ -365,6 +382,7 @@ class _WaitingState extends State<Waiting> {
                             Text(
                               "نعم",
                               style: TextStyle(
+                                fontFamily: 'Century',
                                 color: Colors.black,
                                 fontSize: 18,
                               ),
@@ -414,7 +432,7 @@ class _WaitingState extends State<Waiting> {
                   title: Text(
                     'المزيد',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -424,7 +442,7 @@ class _WaitingState extends State<Waiting> {
                   title: Text(
                     'الملف الشخصى',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -442,7 +460,7 @@ class _WaitingState extends State<Waiting> {
                   title: Text(
                     'تبرع الان',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,
@@ -453,7 +471,7 @@ class _WaitingState extends State<Waiting> {
                   title: Text(
                     'الحالات',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -463,7 +481,7 @@ class _WaitingState extends State<Waiting> {
                   title: Text(
                     'الصفحة الرئيسية',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),

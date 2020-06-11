@@ -47,7 +47,7 @@ class _AllCasesState extends State<AbroveCases> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 25.0,
-                                  fontFamily: "Farsi-Simple-Bold",
+                                  fontFamily: "Simple",
                                   color: Color(0xFF0064BF),
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -87,7 +87,7 @@ class _AllCasesState extends State<AbroveCases> {
                     children: <Widget>[
                       RaisedButton(
                         child: Text("المنتظرة",
-                          style: TextStyle(color: Colors.white, fontFamily: 'Farsi-Simple-Bold', fontSize: 20),),
+                          style: TextStyle(color: Colors.white, fontFamily: 'Simple', fontSize: 20),),
                         onPressed: (){},
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0),
@@ -99,7 +99,7 @@ class _AllCasesState extends State<AbroveCases> {
                       SizedBox(width: 10,),
                       RaisedButton(
                         child: Text("المقبولة",
-                          style: TextStyle(color: Colors.white, fontFamily: 'Farsi-Simple-Bold', fontSize: 20),),
+                          style: TextStyle(color: Colors.white, fontFamily: 'Simple', fontSize: 20),),
                         onPressed: (){},
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0),
@@ -140,7 +140,7 @@ class _AllCasesState extends State<AbroveCases> {
                   child: Text(
                     'الحالات المنتظرة',
                     style: TextStyle(
-                      fontFamily: 'Farsi-Simple-Bold',
+                      fontFamily: 'Simple',
                       fontSize: 25,
                       color: const Color(0xffffffff),
                       fontWeight: FontWeight.w700,
@@ -162,6 +162,7 @@ class _AllCasesState extends State<AbroveCases> {
                         child: Text("نسبة التبرع",style: TextStyle(
                           color: Color(0xFF0064BF),
                           fontSize: 18,
+                            fontFamily: 'Century'
                         ),),
                       )),
                       DataColumn(label: Padding(
@@ -169,6 +170,7 @@ class _AllCasesState extends State<AbroveCases> {
                         child: Text("المبلغ المطلوب",style: TextStyle(
                           color: Color(0xFF0064BF),
                           fontSize: 18,
+                            fontFamily: 'Century'
                         ),),
                       )),
                       DataColumn(label: Padding(
@@ -176,6 +178,7 @@ class _AllCasesState extends State<AbroveCases> {
                         child: Text("البرنامج الفرعي",style: TextStyle(
                           color: Color(0xFF0064BF),
                           fontSize: 18,
+                            fontFamily: 'Century'
                         ),),
                       )),
                       DataColumn(label: Padding(
@@ -183,6 +186,7 @@ class _AllCasesState extends State<AbroveCases> {
                         child: Text("البرنامج",style: TextStyle(
                           color: Color(0xFF0064BF),
                           fontSize: 18,
+                            fontFamily: 'Century'
                         ),),
                       )),
                       DataColumn(label: Padding(
@@ -190,6 +194,7 @@ class _AllCasesState extends State<AbroveCases> {
                         child: Text("الرقم القومي",style: TextStyle(
                           color: Color(0xFF0064BF),
                           fontSize: 18,
+                            fontFamily: 'Century'
                         ),),
                       )),
                     ],
@@ -205,23 +210,23 @@ class _AllCasesState extends State<AbroveCases> {
                           }),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 10.0, left: 10.0),
-                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                         ],
                       ),
@@ -230,48 +235,23 @@ class _AllCasesState extends State<AbroveCases> {
                           DataCell(IconButton(icon: Icon(Icons.remove_red_eye, color: Color(0xff86B9F7),),iconSize: 18,), onTap: (){}),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15),),
-                          ))),
-                        ],
-                      ),
-                      DataRow(
-                        cells: [
-                          DataCell(IconButton(icon: Icon(Icons.remove_red_eye, color: Color(0xff86B9F7),),iconSize: 18,), onTap: (){}),
-                          DataCell(Center(child: Padding(
-                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15),),
-                          ))),
-                          DataCell(Center(child: Padding(
-                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15),),
-                          ))),
-                          DataCell(Center(child: Padding(
-                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15),),
-                          ))),
-                          DataCell(Center(child: Padding(
-                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15),),
-                          ))),
-                          DataCell(Center(child: Padding(
-                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                         ],
                       ),
@@ -280,23 +260,48 @@ class _AllCasesState extends State<AbroveCases> {
                           DataCell(IconButton(icon: Icon(Icons.remove_red_eye, color: Color(0xff86B9F7),),iconSize: 18,), onTap: (){}),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
+                          ))),
+                        ],
+                      ),
+                      DataRow(
+                        cells: [
+                          DataCell(IconButton(icon: Icon(Icons.remove_red_eye, color: Color(0xff86B9F7),),iconSize: 18,), onTap: (){}),
+                          DataCell(Center(child: Padding(
+                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
+                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
+                          ))),
+                          DataCell(Center(child: Padding(
+                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
+                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
+                          ))),
+                          DataCell(Center(child: Padding(
+                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
+                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
+                          ))),
+                          DataCell(Center(child: Padding(
+                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
+                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
+                          ))),
+                          DataCell(Center(child: Padding(
+                            padding: const EdgeInsets.only(right: 5.0, left: 5.0),
+                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                         ],
                       ),
@@ -305,23 +310,23 @@ class _AllCasesState extends State<AbroveCases> {
                           DataCell(IconButton(icon: Icon(Icons.remove_red_eye, color: Color(0xff86B9F7),),iconSize: 18,color: Color(0xff86B9F7),), onTap: (){}),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 5.0, left: 5.0),
-                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                         ],
                       ),
@@ -330,23 +335,23 @@ class _AllCasesState extends State<AbroveCases> {
                           DataCell(IconButton(icon: Icon(Icons.remove_red_eye, color: Color(0xff86B9F7),),iconSize: 18,), onTap: (){}),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("60%", style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("5000", style:TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("رعاية مسنين",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("الدعم الاجتماعي",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                           DataCell(Center(child: Padding(
                             padding: const EdgeInsets.only(right: 20.0, left: 20.0),
-                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15),),
+                            child: Text("12345678910110",style: TextStyle(color: Colors.black, fontSize: 15, fontFamily: 'Century'),),
                           ))),
                         ],
                       ),
@@ -375,28 +380,28 @@ class _AllCasesState extends State<AbroveCases> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.more_horiz,),
-                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.people),
-                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Container(
                     child: CircleAvatar(backgroundColor: Color(0xff7FD858),
                       child: Icon(Icons.add, color: Colors.white,),),
                   ),
-                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,),
 
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.favorite_border),
-                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                   ),
                 ),
               ],

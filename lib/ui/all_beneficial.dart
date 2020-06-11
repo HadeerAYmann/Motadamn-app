@@ -51,7 +51,7 @@ class _AllCasesState extends State<AllBeneficial> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 25.0,
-                                  fontFamily: "Farsi-Simple-Bold",
+                                  fontFamily: "Simple",
                                   color: Color(0xFF0064BF),
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -104,7 +104,7 @@ class _AllCasesState extends State<AllBeneficial> {
                       child: Text(
                         "جميع المستفيدين",
                         style: TextStyle(
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             fontSize: 25,
                             fontWeight: FontWeight.w600,
                             color: Colors.white),
@@ -127,7 +127,7 @@ class _AllCasesState extends State<AllBeneficial> {
                           label: Text(
                         "المدينة",
                         style: TextStyle(
-                          //fontFamily: "Farsi-Simple-Bold",
+                          fontFamily: 'Century',
                           color: Color(0xFF0064BF),
                         ),
                       )),
@@ -135,7 +135,7 @@ class _AllCasesState extends State<AllBeneficial> {
                           label: Text(
                         "النوع",
                         style: TextStyle(
-                          //fontFamily: "Farsi-Simple-Bold",
+                          fontFamily: 'Century',
                           color: Color(0xFF0064BF),
                         ),
                       )),
@@ -143,7 +143,7 @@ class _AllCasesState extends State<AllBeneficial> {
                           label: Text(
                         "الرقم القومي",
                         style: TextStyle(
-                          //fontFamily: "Farsi-Simple-Bold",
+                          fontFamily: 'Century',
                           color: Color(0xFF0064BF),
                         ),
                       )),
@@ -151,7 +151,7 @@ class _AllCasesState extends State<AllBeneficial> {
                           label: Text(
                         "الأسم",
                         style: TextStyle(
-                          //fontFamily: "Farsi-Simple-Bold",
+                          fontFamily: 'Century',
                           color: Color(0xFF0064BF),
                         ),
                       )),
@@ -185,10 +185,10 @@ class _AllCasesState extends State<AllBeneficial> {
                                 },
                               ),
                               onTap: () {}),
-                          DataCell(Center(child: Text("الاسكندرية"))),
-                          DataCell(Center(child: Text("ذكر"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("يوسف"))),
+                          DataCell(Center(child: Text("الاسكندرية", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("ذكر", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("يوسف", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                       DataRow(
@@ -219,10 +219,10 @@ class _AllCasesState extends State<AllBeneficial> {
                               },
                             ),
                           ),
-                          DataCell(Center(child: Text("القاهرة"))),
-                          DataCell(Center(child: Text("ذكر"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("يوسف"))),
+                          DataCell(Center(child: Text("القاهرة", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("ذكر", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("يوسف", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                       DataRow(
@@ -253,10 +253,10 @@ class _AllCasesState extends State<AllBeneficial> {
                                 },
                               ),
                               onTap: () {}),
-                          DataCell(Center(child: Text("القاهرة"))),
-                          DataCell(Center(child: Text("انثي"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("سعدية"))),
+                          DataCell(Center(child: Text("القاهرة", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("انثي", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("سعدية", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                       DataRow(
@@ -287,10 +287,10 @@ class _AllCasesState extends State<AllBeneficial> {
                                 },
                               ),
                               onTap: () {}),
-                          DataCell(Center(child: Text("الجيزة"))),
-                          DataCell(Center(child: Text("انثي"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("نادية"))),
+                          DataCell(Center(child: Text("الجيزة", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("انثي", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("نادية", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                       DataRow(
@@ -321,10 +321,10 @@ class _AllCasesState extends State<AllBeneficial> {
                                 },
                               ),
                               onTap: () {}),
-                          DataCell(Center(child: Text("الاسكندرية"))),
-                          DataCell(Center(child: Text("ذكر"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("يوسف"))),
+                          DataCell(Center(child: Text("الاسكندرية", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("ذكر", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("يوسف", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                       DataRow(
@@ -355,10 +355,10 @@ class _AllCasesState extends State<AllBeneficial> {
                                 },
                               ),
                               onTap: () {}),
-                          DataCell(Center(child: Text("القاهرة"))),
-                          DataCell(Center(child: Text("ذكر"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("يوسف"))),
+                          DataCell(Center(child: Text("القاهرة", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("ذكر", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("يوسف", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                       DataRow(
@@ -389,10 +389,10 @@ class _AllCasesState extends State<AllBeneficial> {
                                 },
                               ),
                               onTap: () {}),
-                          DataCell(Center(child: Text("متزوج"))),
-                          DataCell(Center(child: Text("12/5/1995"))),
-                          DataCell(Center(child: Text("12345678901"))),
-                          DataCell(Center(child: Text("يوسف"))),
+                          DataCell(Center(child: Text("متزوج", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12/5/1995", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("12345678901", style: TextStyle(fontFamily: 'Century'),))),
+                          DataCell(Center(child: Text("يوسف", style: TextStyle(fontFamily: 'Century'),))),
                         ],
                       ),
                     ],
@@ -437,7 +437,7 @@ class _AllCasesState extends State<AllBeneficial> {
                   title: Text(
                     'المزيد',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                    fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -447,7 +447,7 @@ class _AllCasesState extends State<AllBeneficial> {
                   title: Text(
                     'الملف الشخصى',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -465,7 +465,7 @@ class _AllCasesState extends State<AllBeneficial> {
                   title: Text(
                     'تبرع الان',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,
@@ -476,7 +476,7 @@ class _AllCasesState extends State<AllBeneficial> {
                   title: Text(
                     'الحالات',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -486,7 +486,7 @@ class _AllCasesState extends State<AllBeneficial> {
                   title: Text(
                     'الصفحة الرئيسية',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -599,6 +599,7 @@ class _CstomState extends State<Cstom> {
           style: TextStyle(
               color: Color(0xff0064BF),
               fontSize: 20,
+              fontFamily: 'Century',
               fontWeight: FontWeight.w600),
         )),
       ));
@@ -615,6 +616,7 @@ class _CstomState extends State<Cstom> {
           style: TextStyle(
               color: Color(0xff0064BF),
               fontSize: 20,
+              fontFamily: 'Century',
               fontWeight: FontWeight.w600),
         )),
       ));
@@ -631,6 +633,7 @@ class _CstomState extends State<Cstom> {
           style: TextStyle(
               color: Color(0xff0064BF),
               fontSize: 20,
+              fontFamily: 'Century',
               fontWeight: FontWeight.w600),
         )),
       ));
@@ -647,6 +650,7 @@ class _CstomState extends State<Cstom> {
           style: TextStyle(
               color: Color(0xff0064BF),
               fontSize: 20,
+              fontFamily: 'Century',
               fontWeight: FontWeight.w600),
         )),
       ));
@@ -663,6 +667,7 @@ class _CstomState extends State<Cstom> {
           style: TextStyle(
               color: Color(0xff0064BF),
               fontSize: 20,
+              fontFamily: 'Century',
               fontWeight: FontWeight.w600),
         )),
       ));
@@ -734,7 +739,7 @@ class _CstomState extends State<Cstom> {
                     hint: Text(
                       "أختار نوع البرنامج",
                       style: TextStyle(
-                        fontFamily: 'Farsi-Simple-Bold',
+                        fontFamily: 'Simple',
                         fontSize: 22,
                         color: const Color(0xff000000),
                       ),
@@ -747,6 +752,7 @@ class _CstomState extends State<Cstom> {
                           child: Text(
                             "الدعم الأجتماعي",
                             style: TextStyle(
+                                fontFamily: 'Century',
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff0064BF)),
                           ),
@@ -758,6 +764,7 @@ class _CstomState extends State<Cstom> {
                           child: Text(
                             "أوجه الزكاة",
                             style: TextStyle(
+                                fontFamily: 'Century',
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff0064BF)),
                           ),
@@ -769,6 +776,7 @@ class _CstomState extends State<Cstom> {
                           child: Text(
                             "التمنية العمرانية",
                             style: TextStyle(
+                                fontFamily: 'Century',
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff0064BF)),
                           ),
@@ -780,6 +788,7 @@ class _CstomState extends State<Cstom> {
                           child: Text(
                             "تمكين أقتصادي",
                             style: TextStyle(
+                                fontFamily: 'Century',
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff0064BF)),
                           ),
@@ -791,6 +800,7 @@ class _CstomState extends State<Cstom> {
                           child: Text(
                             "الرعاية الصحية",
                             style: TextStyle(
+                                fontFamily: 'Century',
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xff0064BF)),
                           ),
@@ -828,7 +838,7 @@ class _CstomState extends State<Cstom> {
                     hint: Text(
                       "أختار البرنامج الفرعي",
                       style: TextStyle(
-                        fontFamily: 'Farsi-Simple-Bold',
+                        fontFamily: 'Simple',
                         fontSize: 22,
                         color: const Color(0xff000000),
                       ),
@@ -843,7 +853,7 @@ class _CstomState extends State<Cstom> {
                       style: TextStyle(
                           color: Colors.blueGrey,
                           fontSize: 20,
-                          fontFamily: 'Farsi-Simple-Bold'),
+                          fontFamily: 'Simple'),
                     ),
                     iconDisabledColor: Colors.white,
                   ),
@@ -869,7 +879,7 @@ class _CstomState extends State<Cstom> {
                         hintText: "المبلغ",
                         contentPadding: EdgeInsets.all(1.0),
                         hintStyle: TextStyle(
-                          fontFamily: 'Farsi-Simple-Bold',
+                          fontFamily: 'Simple',
                           fontSize: 22,
                           color: const Color(0xff000000),
                         ),
@@ -891,7 +901,7 @@ class _CstomState extends State<Cstom> {
                     decoration: InputDecoration(
                       hintText: "الوصف",
                       hintStyle: TextStyle(
-                        fontFamily: 'Farsi-Simple-Bold',
+                        fontFamily: 'Simple',
                         fontSize: 22,
                         color: Color(0xff000000),
                       ),
@@ -914,11 +924,11 @@ class _CstomState extends State<Cstom> {
                   ),
                   elevation: 3,
                   child: Text(
-                    "أضافة ",
+                    "تأكيد ",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: 'Farsi-Simple-Bold',
+                      fontFamily: 'Simple',
                       fontSize: 25,
                       fontWeight: FontWeight.w700,
                     ),
@@ -930,372 +940,5 @@ class _CstomState extends State<Cstom> {
         ),
       ),
     );
-//    return Container(
-//      height: 400,
-//      decoration: BoxDecoration(
-//        color: Colors.white,
-//        shape: BoxShape.rectangle,
-//        borderRadius: BorderRadius.circular(30),
-//        boxShadow: [
-//          BoxShadow(
-//            color: const Color(0xff038ADD),
-//            blurRadius: 5.0,
-//            offset: Offset(0.0, 5.0),
-//          ),
-//        ],
-//      ),
-//      child: Padding(
-//        padding: const EdgeInsets.only( bottom: 5, right: 20, left: 20),
-//        child: ListView(
-//          children: <Widget>[
-//            Column(
-//              children: <Widget>[
-//                 Padding(
-//                   padding: const EdgeInsets.only(left:20, right: 20),
-//                   child: DropdownButtonFormField(
-//                     decoration: InputDecoration(
-//
-//                       //filled: true,
-//                       prefixIcon: Icon(Icons.arrow_drop_down, size: 25,color: Colors.black,),
-//                       border: InputBorder.none,
-//                       //contentPadding: EdgeInsets.all(5),
-//                     ),
-//                       iconEnabledColor: Colors.white,
-//                         elevation: 1,
-//                         hint: Text("أختار نوع البرنامج", style:TextStyle(
-//                           fontFamily: 'Farsi-Simple-Bold',
-//                           fontSize: 22,
-//                           color: const Color(0xff000000),
-//                         ),),
-//                         onChanged: dropChange,
-//                         value: dropval1,
-//                         items: <String>[ 'الدعم الأجتماعي', 'أوجه الزكاة', 'التنمية العمرانية','التمكين الأقتصادي', 'الرعاية الصحية'
-//                         ].map<DropdownMenuItem<String>>((String value){
-//                           return DropdownMenuItem<String>(
-//                             child: Align(
-//                                 child: Text(
-//                                   value,
-//                                     style: TextStyle(fontWeight: FontWeight.w700, color: Color(0xff0064BF)),
-//                                 )),
-//                             value: value,
-//                           );
-//                         }).toList()
-//                   ),
-//                 ),
-//
-//                Padding(
-//                  padding: const EdgeInsets.only(left: 10,),
-//                  child: DropdownButtonFormField(
-//                      decoration: InputDecoration(
-//                        //filled: true,
-//                        border: InputBorder.none,
-//                          prefixIcon: Icon(Icons.arrow_drop_down, size: 25,color: Colors.black,),
-//                        //contentPadding: EdgeInsets.all(5),
-//
-//                      ),
-//                      elevation: 1,
-//                      iconEnabledColor: Colors.white,
-//                      style: TextStyle(fontSize: 18, color: Colors.blueGrey,),
-//                      hint: Text(" نوع البرنامج الفرعي",
-//                        textAlign: TextAlign.center,
-//                        style:TextStyle(
-//                          fontFamily: 'Farsi-Simple-Bold',
-//                          fontSize: 22,
-//                          color: const Color(0xff000000),
-//                        ),),
-//                      onChanged: dropChange2,
-//                      value: dropval2,
-//                      items: <String>[ 'خدمات للمكفوفين', 'زواج اليتيمات', 'توزيع شنط غذائية','توفير ملابس', 'الغارمين','كفالة التيم','رعاية المسنين',
-//                        'زكاة الفطر','زكاة التجارة','زكاة الركاز','زكاة الحيوان','زكاة الأراضي','زكاة الديون','زكاة الأئتمان',
-//                        'إعمار المنازل','الغارمين','تركيب عدادات المياه','محطة تنقية المياه',
-//                        'توزيع رؤوس المواشي','التأهيل والتوظيف','مشاريع الخير','القرض الحسن',
-//                        'توفير الأجهزة التعويضية','علاج ضحايا وحوادث الحروق','علاج ذوي الأحتياجات الخاصة','مكافحة ضعف وفقدان البصر','وحدات الغسيل الكلوي','إجراء التحاليل والأشاعات','إجراء العمليات الجراحية','حضانات الأطفال','علاج الأدمان'
-//                      ].map<DropdownMenuItem<String>>((String value){
-//                        return DropdownMenuItem<String>(
-//                          child: Align(
-//                            alignment: Alignment.center,
-//                            child: Text(
-//                              value,style: TextStyle(fontWeight: FontWeight.w700, color: Color(0xff0064BF)),
-//                            ),
-//                          ),
-//                          value: value,
-//                        );
-//                      }).toList()
-//                  ),
-//                ),
-//                Padding(
-//                  padding: const EdgeInsets.only(right: 20.0, left: 20.0),
-//                  child: Padding(
-//                    padding: const EdgeInsets.only(left: 140.0, ),
-//                    child: TextField(
-//                      textAlign: TextAlign.right,
-//                      decoration: InputDecoration(
-//                        hintText: "المبلغ",
-//                        contentPadding: EdgeInsets.all(1.0),
-//                        hintStyle: TextStyle(
-//                          fontFamily: 'Farsi-Simple-Bold',
-//                          fontSize: 22,
-//                          color: const Color(0xff000000),
-//                        ),
-//                      ),
-//                    ),
-//                  ),
-//                ),
-//                SizedBox(height: 10,),
-//                TextFormField(
-//                  textAlign: TextAlign.right,
-//                  decoration: InputDecoration(
-//                    hintText: "الوصف",
-//                    hintStyle: TextStyle(
-//                      fontFamily: 'Farsi-Simple-Bold',
-//                      fontSize: 22,
-//                      color: Color(0xff000000),
-//                    ),
-//                    enabledBorder: OutlineInputBorder(
-//                      borderRadius: BorderRadius.circular(17.0),
-//                      borderSide: BorderSide(width: 2.0, color: Color(0xff86B9F7),
-//                        //style: BorderStyle.none,
-//                      ),
-//                    ),
-//                  )
-//                ),
-//                SizedBox(height: 10,),
-//                RaisedButton(
-//                  onPressed: () {
-//                    Navigator.pop(context);
-//                  },
-//                  color: Color(0xffF7DC0C),
-//                  shape: RoundedRectangleBorder(
-//                    side: BorderSide(color: Colors.white, width: 2.0),
-//                    borderRadius: BorderRadius.circular(30.0),
-//                  ),
-//                  elevation: 3,
-//                  child: Text(
-//                    "تأكيد ",
-//                    textAlign: TextAlign.center,
-//                    style: TextStyle(
-//                      color: Colors.white,
-//                      fontFamily: 'Farsi-Simple-Bold',
-//                      fontSize: 25,
-//                      fontWeight: FontWeight.w700,
-//                    ),
-//                  ),
-//                ),
-//              ],
-//            ),
-//          ],
-//        ),
-//      ),
-//    );
   }
 }
-
-// dialogContent(BuildContext context) {
-//  return Dialog(
-//    shape: RoundedRectangleBorder(
-//      borderRadius: BorderRadius.circular(20),
-//    ),
-//    elevation: 0,
-//    child: Container(
-//      height: 200,
-//      decoration: BoxDecoration(
-//        color: Colors.white,
-//        shape: BoxShape.rectangle,
-//        borderRadius: BorderRadius.circular(30),
-//        boxShadow: [
-//          BoxShadow(
-//            color: const Color(0xff038ADD),
-//            blurRadius: 5.0,
-//            offset: Offset(0.0, 5.0),
-//          ),
-//        ],
-//      ),
-//      child: Padding(
-//        padding: const EdgeInsets.all(12.0),
-//        child: Column(
-//          children: <Widget>[
-//            Text(
-//              "أختار نوع البرنامج",
-//              style: TextStyle(
-//                  color: Colors.black,
-//                  fontSize: 20,
-//                  fontFamily: 'Farsi-Simple-Bold'),
-//            ),
-//            Padding(
-//              padding: const EdgeInsets.only(right: 20.0, left: 20.0),
-//              child: Row(
-//                children: <Widget>[
-//                  Text(
-//                    "المبلغ",
-//                    style: TextStyle(
-//                        color: Colors.black,
-//                        fontSize: 20,
-//                        fontFamily: 'Farsi-Simple-Bold'),
-//                  ),
-//                  Padding(
-//                    padding: const EdgeInsets.only(left: 120.0, right: 30.0),
-//                    child: TextField(
-//                      textAlign: TextAlign.right,
-//                      decoration: InputDecoration(
-//                        hintText: "المبلغ",
-//                        hintStyle: TextStyle(
-//                          fontFamily: 'Farsi-Simple-Bold',
-//                          fontSize: 22,
-//                          color: const Color(0xff000000),
-//                        ),
-//                      ),
-//                    ),
-//                  ),
-//                ],
-//              ),
-//            ),
-//            Padding(
-//              padding: const EdgeInsets.all(8.0),
-//              child: Row(
-//                children: <Widget>[
-//                  Text(
-//                    "الوصف",
-//                    style: TextStyle(
-//                        color: Colors.black,
-//                        fontSize: 20,
-//                        fontFamily: 'Farsi-Simple-Bold'),
-//                  ),
-//                  SizedBox(width: 10,),
-//                  TextField(
-//                    decoration: InputDecoration(
-//                        border: OutlineInputBorder(
-//                      borderRadius: BorderRadius.circular(10),
-//                      borderSide: BorderSide(
-//                        color: Colors.cyanAccent,
-//                        width: 2.0,
-//                      ),
-//                    )),
-//                  ),
-//                ],
-//              ),
-//            ),
-//            SizedBox(height: 10,),
-//            FlatButton(
-//              onPressed: () {
-//                Navigator.pop(context);
-//              },
-//              color: Color(0xffF7DC0C),
-//              shape: RoundedRectangleBorder(
-//                borderRadius: BorderRadius.circular(30.0),
-//              ),
-//              child: Text(
-//                "أضافة",
-//                style: TextStyle(
-//                  color: Colors.white,
-//                  fontFamily: 'Farsi-Simple-Bold',
-//                  fontSize: 20,
-//                  fontWeight: FontWeight.w700,
-//                ),
-//              ),
-//            ),
-//          ],
-//        ),
-//      ),
-//    ),
-//  );
-//}
-//class CustomDialog extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Dialog(
-//      shape: RoundedRectangleBorder(
-//        borderRadius: BorderRadius.circular(20),
-//      ),
-//      elevation: 0,
-//      child: dialogContent(context),
-//    );
-//  }
-//  dialogContent(BuildContext context){
-//    return Stack(
-//      children: <Widget>[
-//        Container(
-//          height: 200,
-//          padding: EdgeInsets.all(10),
-//          margin: EdgeInsets.all(5),
-////          decoration: BoxDecoration(
-////            color: Colors.white,
-////            shape: BoxShape.rectangle,
-////            borderRadius: BorderRadius.circular(17),
-////            boxShadow: [
-////            BoxShadow(
-////            color: const Color(0xff038ADD),
-////                blurRadius: 10.0,
-////                offset: Offset(0.0, 10.0),
-////            ),
-////            ],
-////          ),
-//          child: Column(
-//            mainAxisSize: MainAxisSize.min,
-//            children: <Widget>[
-//              Row(
-//                children: <Widget>[
-//                  /////dropDown///
-
-//                ],
-//              ),
-//            ],
-//          ),
-//        ),
-//      ],
-//    );
-//  }
-//}
-
-//Transform.translate(
-//offset: Offset(80.0, 70.0),
-//child:
-//Container(
-//width: 166.1,
-//height: 49.2,
-//decoration: BoxDecoration(
-//borderRadius: BorderRadius.circular(17.0),
-//color: const Color(0xff7FD858),
-//boxShadow: [
-//BoxShadow(
-//color: const Color(0x37038add),
-//offset: Offset(0, 10),
-//blurRadius: 25)
-//],
-//),
-//),
-//),
-//Transform.translate(
-//offset: Offset(75.0, 15.0),
-//child: Text(
-//'جميع المستفيدين',
-//style: TextStyle(
-//fontFamily: 'Farsi-Simple-Bold',
-//fontSize: 25,
-//color: const Color(0xffffffff),
-//fontWeight: FontWeight.w700,
-//),
-//textAlign: TextAlign.left,
-//),
-//),
-//DropdownButtonFormField(
-//decoration: InputDecoration(
-////filled: true,
-//border: InputBorder.none,
-////contentPadding: EdgeInsets.all(5),
-//),
-//elevation: 1,
-//hint: Text("نوع البرنامج الفرعي",
-//style:TextStyle(
-//fontFamily: 'Farsi-Simple-Bold',
-//fontSize: 22,
-//color: const Color(0xff000000),
-//),),
-//onChanged: dropChange,
-//value: dropval2,
-//items: Program.map<DropdownMenuItem<String>>((String value){
-//return DropdownMenuItem<String>(
-//child: Text(value),
-//value: value,
-//);
-//}).toList()
-//),

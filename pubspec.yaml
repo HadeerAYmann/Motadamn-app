@@ -19,21 +19,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   font_awesome_flutter: ^8.8.1
-  curved_navigation_bar: ^0.3.2
   adobe_xd: ^0.1.0
-  fancy_bottom_navigation: ^0.3.2
-  flutter_snake_navigationbar: ^0.4.0+1
   flutter_svg: ^0.17.4
   flutter_multiselect: ^0.5.0
-#  intl: ^0.16.1
-  localization: ^0.0.2
+
+
 
 
 dev_dependencies:
@@ -55,6 +51,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - images/logo1.png
     - images/icon.jpeg
     - images/057-upload.png
     - images/image1.jpg
@@ -114,12 +111,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-#  - family: Century Gothic
-#    fonts:
-#     - asset: fonts/CenturyGothic.ttf
-  - family: Farsi-Simple-Bold
+  - family: Simple
     fonts:
-    - asset: fonts/Farsi-Simple-Bold.ttf
+     - asset: fonts/Simple.ttf
+  - family: Century
+    fonts:
+    - asset: fonts/CenturyGothic.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
 

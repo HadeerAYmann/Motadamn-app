@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
+
 
 class Screen3 extends StatefulWidget {
   @override
@@ -31,7 +31,7 @@ class _Screen1State extends State<Screen3> {
                       style: TextStyle(
                           color: Color(0xFF7FD858),
                           fontSize: 25,
-                          fontFamily: "Farsi-Simple-Bold",
+                          fontFamily: "Simple",
                           fontWeight: FontWeight.w700),
                     ),
                   ),
@@ -54,7 +54,7 @@ class _Screen1State extends State<Screen3> {
                   style: TextStyle(
                     color: Color(0xFF000000),
                     fontSize: 20,
-                    fontFamily: "Farsi-Simple-Bold",
+                    fontFamily: "Simple",
                   ),
                   textAlign: TextAlign.right,
                 ),
@@ -124,7 +124,7 @@ class _Screen1State extends State<Screen3> {
                                 "زكاة الديون",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontFamily: "Farsi-Simple-Bold",
+                                  fontFamily: "Simple",
                                   color: Color(0xFF0064BF),
                                   fontSize: 18,
                                 ),
@@ -189,7 +189,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة الفطر",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -258,7 +258,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة التجارة",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -322,7 +322,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة الأئتمان",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -391,7 +391,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة الركاز",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -455,7 +455,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة الأراضي",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -524,7 +524,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة الخارج من الأرض",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -588,7 +588,7 @@ class _Screen1State extends State<Screen3> {
                               "زكاة الحيوانات",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -620,28 +620,28 @@ class _Screen1State extends State<Screen3> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.more_horiz,),
-                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.people),
-                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Container(
                     child: CircleAvatar(backgroundColor: Color(0xff7FD858),
                       child: Icon(Icons.add, color: Colors.white,),),
                   ),
-                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,),
 
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.favorite_border),
-                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                   ),
                 ),
               ],

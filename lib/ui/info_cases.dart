@@ -46,7 +46,7 @@ class _InfoCasesState extends State<InfoCases> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 25.0,
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             color: Color(0xFF0064BF),
                             fontWeight: FontWeight.w600,
                           ),
@@ -116,6 +116,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 ": الأسم",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -126,6 +127,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "سعيد",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -145,6 +147,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 ": البرنامج",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -155,6 +158,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "برنامج الدعم الأجتماعي",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -174,6 +178,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 ": البرنامج الفرعي",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -184,6 +189,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "الغارمين",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -203,6 +209,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 ": تاريخ الميلاد",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -213,6 +220,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "12/5/1980",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -232,6 +240,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 ": المدينة",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -242,6 +251,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "الاسكندرية",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -262,6 +272,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 child: Text(
                                   ": وصف الحالة",
                                   style: TextStyle(
+                                      fontFamily: 'Century',
                                       color: Colors.black,
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600),
@@ -270,6 +281,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "تحتاج الي 4000 جنيه شهريا\n لتعيش حياة كريمة",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -287,6 +299,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 ":  النوع",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -297,6 +310,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "ذكر",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -315,6 +329,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 ": المبلغ المطلوب",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -325,6 +340,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "4000",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -343,6 +359,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 ": تم التبرع بنسبة",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -353,6 +370,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "65%",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -372,6 +390,7 @@ class _InfoCasesState extends State<InfoCases> {
                                 ": الحالة مقدمة من",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -382,6 +401,7 @@ class _InfoCasesState extends State<InfoCases> {
                               Text(
                                 "مؤسسة مصر الخير",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -432,7 +452,7 @@ class _InfoCasesState extends State<InfoCases> {
                   title: Text(
                     'المزيد',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -442,7 +462,7 @@ class _InfoCasesState extends State<InfoCases> {
                   title: Text(
                     'الملف الشخصى',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -460,7 +480,7 @@ class _InfoCasesState extends State<InfoCases> {
                   title: Text(
                     'تبرع الان',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,
@@ -471,7 +491,7 @@ class _InfoCasesState extends State<InfoCases> {
                   title: Text(
                     'الحالات',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -481,7 +501,7 @@ class _InfoCasesState extends State<InfoCases> {
                   title: Text(
                     'الصفحة الرئيسية',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),

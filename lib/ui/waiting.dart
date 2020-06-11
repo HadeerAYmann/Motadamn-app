@@ -45,7 +45,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 25.0,
-                            fontFamily: "Farsi-Simple-Bold",
+                            fontFamily: "Simple",
                             color: Color(0xFF0064BF),
                             fontWeight: FontWeight.w600,
                           ),
@@ -112,6 +112,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                                 ": الرقم القومي",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -129,6 +130,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                                   child: Text(
                                     "(المزيد)   29904190202157",
                                     style: TextStyle(
+                                      fontFamily: 'Century',
                                       color: Color(0xff038ADD),
                                       fontSize: 18,
                                     ),
@@ -161,6 +163,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                                 child: Text(
                                   ": وصف الحالة",
                                   style: TextStyle(
+                                      fontFamily: 'Century',
                                       color: Colors.black,
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600),
@@ -184,6 +187,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 ": المبلغ المطلوب",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -194,6 +198,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "4000",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -212,6 +217,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 ": نسبة التبرع",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -222,6 +228,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "65%",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -240,6 +247,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "هل يوجد أفراد أسرة؟",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -250,6 +258,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "أقارب مباشرين (اخوات-أبناء..)",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -269,6 +278,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                                 " ما قيمة الدخل؟",
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -279,6 +289,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "من 500 الي 1000 جنيها",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -297,6 +308,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "هل لديه مرض دائم أو خطير؟",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -307,6 +319,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "لا",
                                 style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 18,
                                 ),
@@ -327,6 +340,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                               Text(
                                 "هل لديه ممتلكات (منزل-عربية)؟",
                                 style: TextStyle(
+                                    fontFamily: 'Century',
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600),
@@ -353,6 +367,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                             Text(
                               "هل يحتاج الي رعاية خاصة(لا يستطيع التحرك..)؟",
                               style: TextStyle(
+                                  fontFamily: 'Century',
                                   color: Colors.black,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w600),
@@ -363,6 +378,7 @@ class _WaitingCasesState extends State<WaitingCases> {
                             Text(
                               "نعم",
                               style: TextStyle(
+                                fontFamily: 'Century',
                                 color: Colors.black,
                                 fontSize: 18,
                               ),
@@ -405,26 +421,24 @@ class _WaitingCasesState extends State<WaitingCases> {
               selectedItemColor: Color(0xff7FD858),
               unselectedItemColor: Color(0xff0064BF),
               items: [
-
-
-
-
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
+                  icon: Icon(
+                    Icons.more_horiz,
+                  ),
                   title: Text(
-                    'الصفحة الرئيسية',
+                    'المزيد',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.favorite_border),
+                  icon: Icon(Icons.people),
                   title: Text(
-                    'الحالات',
+                    'الملف الشخصى',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
@@ -442,35 +456,32 @@ class _WaitingCasesState extends State<WaitingCases> {
                   title: Text(
                     'تبرع الان',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,
                   ),
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.people),
+                  icon: Icon(Icons.favorite_border),
                   title: Text(
-                    'الملف الشخصى',
+                    'الحالات',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.more_horiz,
-                  ),
+                  icon: Icon(Icons.home),
                   title: Text(
-                    'المزيد',
+                    'الصفحة الرئيسية',
                     style: TextStyle(
-                        fontFamily: 'Century1',
+                        fontFamily: 'Century',
                         fontSize: 13,
                         fontWeight: FontWeight.w900),
                   ),
                 ),
-
               ],
               onTap: (index) {
                 setState(() {

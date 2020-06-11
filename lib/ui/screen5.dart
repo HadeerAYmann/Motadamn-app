@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Screen5 extends StatefulWidget {
@@ -32,7 +32,7 @@ class _Screen1State extends State<Screen5> {
                       style: TextStyle(
                           color: Color(0xFF7FD858),
                           fontSize: 25,
-                          fontFamily: "Farsi-Simple-Bold",
+                          fontFamily: "Simple",
                           fontWeight: FontWeight.w700),
                     ),
                   ),
@@ -55,7 +55,7 @@ class _Screen1State extends State<Screen5> {
                   style: TextStyle(
                     color: Color(0xFF000000),
                     fontSize: 20,
-                    fontFamily: "Farsi-Simple-Bold",
+                    fontFamily: "Simple",
                   ),
                   textAlign: TextAlign.right,
                 ),
@@ -125,7 +125,7 @@ class _Screen1State extends State<Screen5> {
                                 "إجراء العمليات الجراحية",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontFamily: "Farsi-Simple-Bold",
+                                  fontFamily: "Simple",
                                   color: Color(0xFF0064BF),
                                   fontSize: 15,
                                 ),
@@ -190,7 +190,7 @@ class _Screen1State extends State<Screen5> {
                               "إجراء التحاليل الطبية",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 15,
                               ),
@@ -259,7 +259,7 @@ class _Screen1State extends State<Screen5> {
                               "علاج الأدمان",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -323,7 +323,7 @@ class _Screen1State extends State<Screen5> {
                               "عمليات القلب",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -392,7 +392,7 @@ class _Screen1State extends State<Screen5> {
                               "حضانات اطفال",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -456,7 +456,7 @@ class _Screen1State extends State<Screen5> {
                               "علاض ضحايا الحوادث والحروق",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 15,
                               ),
@@ -525,7 +525,7 @@ class _Screen1State extends State<Screen5> {
                               "كفالة العلاج",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -658,7 +658,7 @@ class _Screen1State extends State<Screen5> {
                               "مرضي الأورام",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -722,7 +722,7 @@ class _Screen1State extends State<Screen5> {
                               "مكافحة فيرس سي",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -791,7 +791,7 @@ class _Screen1State extends State<Screen5> {
                               "ذوى القدرات الخاصة",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -855,7 +855,7 @@ class _Screen1State extends State<Screen5> {
                               "مكافحةالصم والبكم",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -924,7 +924,7 @@ class _Screen1State extends State<Screen5> {
                               "توفير الاجهزة التعويضية",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -988,7 +988,7 @@ class _Screen1State extends State<Screen5> {
                               "الرفق بالحيوان",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -1057,7 +1057,7 @@ class _Screen1State extends State<Screen5> {
                               "وحدات الغسيل الكلوي",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: "Farsi-Simple-Bold",
+                                fontFamily: "Simple",
                                 color: Color(0xFF0064BF),
                                 fontSize: 18,
                               ),
@@ -1089,28 +1089,28 @@ class _Screen1State extends State<Screen5> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.more_horiz,),
-                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('المزيد', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.people),
-                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الملف الشخصى', style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Container(
                     child: CircleAvatar(backgroundColor: Color(0xff7FD858),
                       child: Icon(Icons.add, color: Colors.white,),),
                   ),
-                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('تبرع الان',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                     textAlign: TextAlign.end,),
 
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.favorite_border),
-                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),),
+                  title: Text('الحالات',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century1',fontSize: 13,fontWeight: FontWeight.w900),
+                  title: Text('الصفحة الرئيسية',style: TextStyle(fontFamily: 'Century',fontSize: 13,fontWeight: FontWeight.w900),
                   ),
                 ),
               ],
