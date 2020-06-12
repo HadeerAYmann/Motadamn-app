@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/Donor.dart';
 import 'package:flutterapp/program10.dart';
 import 'package:flutterapp/program11.dart';
 import 'package:flutterapp/program12.dart';
@@ -36,12 +37,31 @@ import 'package:flutterapp/program6.dart';
 import 'package:flutterapp/program7.dart';
 import 'package:flutterapp/program8.dart';
 import 'package:flutterapp/program9.dart';
+import '3lag.dart';
 import 'About.dart';
 import 'Cases.dart';
 import 'Contact us.dart';
 import 'Our team.dart';
 import 'program.dart';
 import 'news.dart';
+import 'abrove_cases.dart';
+import 'all.dart';
+import 'all_beneficial.dart';
+import 'all_cases.dart';
+import 'charity_profile.dart';
+import 'info_benef.dart';
+import 'info_beneficial.dart';
+import 'info_cases.dart';
+import 'plug.dart';
+import 'screen2.dart';
+import 'screen3.dart';
+import 'screen4.dart';
+import 'screen5.dart';
+import 'screen6.dart';
+import 'sign_in1.dart';
+import 'sign_in2.dart';
+import 'waiting.dart';
+import 'waiting_cases.dart';
 
 
 
@@ -49,10 +69,33 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Program(),
+//      home: Home1(),
+//      home: Waiting(),
+      // home: Drop(),
+//     home: WaitingCases(),
+//      home: InfoBenef(),
+//      home: InfoCases(),
+//       home: InfoBeneficial(),
+//      home: Profile(),
+      // home: Peneficial(),
+//       home: AllCases(),
+//       home: AbroveCases(),
+//      home: AllBeneficial(),
+//      home: SignIn1(),
+//        home: Screen1(),
+//      home: All(),
+      // home: Check(),
+//      home: Screen3(),
+//       home: Screen4(),
+//      home: Screen5(),
+      //home: Program1(),
+      home: Plug(),
+//      home: Screen6(),
+      // home: DatePicker(),
     ),
   );
 }
+
 
 
 

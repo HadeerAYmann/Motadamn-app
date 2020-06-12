@@ -22,9 +22,15 @@ dependencies:
 
 
   cupertino_icons: ^0.1.2
+  percent_indicator: "^2.1.1"
   fluttertoast: ^3.1.3
   font_awesome_flutter: ^8.8.1
   flutter_svg: ^0.17.4
+  flutter_multiselect: ^0.5.0
+  adobe_xd: ^0.1.0
+
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -116,6 +122,54 @@ flutter:
     - images/Case4.jpg
     - images/Case5.jpg
     - images/Case6.jpeg
+    - images/logo1.png
+    - images/icon.jpeg
+    - images/057-upload.png
+    - images/image1.jpg
+    - images/image2.jpeg
+    - images/images3.png
+    - images/images4.png
+    - images/zakat1.jpg
+    - images/zakat2.jpg
+    - images/zakat3.jpg
+    - images/zakat4.jpg
+    - images/zakat5.jpg
+    - images/zakat6.jpg
+    - images/zakat7.jpg
+    - images/zakat8.jpg
+    - images/da3m1.png
+    - images/da3m2.jpg
+    - images/da3m3.png
+    - images/da3m4.jpg
+    - images/da3m5.png
+    - images/da3m6.png
+    - images/da3m7.png
+    - images/da3m8.png
+    - images/1.jpg
+    - images/2.jpg
+    - images/3.jpg
+    - images/4.jpg
+    - images/5.jpg
+    - images/6.jpg
+    - images/7.jpg
+    - images/8.jpg
+    - images/9.jpg
+    - images/10.png
+    - images/111.jpeg
+    - images/12.png
+    - images/643.jpg
+    - images/15.jpg
+    - images/22.png
+    - images/23.jpg
+    - images/24.jpg
+    - images/tnmya1.jpg
+    - images/tnmya2.png
+    - images/tnmya3.jpg
+    - images/charity.png
+    - images/upload.png
+    - images/case.jpeg
+    - images/case.png
+    - images/donor.png
 
   fonts:
     - family: Century
