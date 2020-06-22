@@ -7,6 +7,7 @@ class Loginas extends StatefulWidget {
 }
 
 class _LoginasState extends State<Loginas> {
+  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,6 +154,95 @@ class _LoginasState extends State<Loginas> {
        ),
       ],
      ),
+      bottomNavigationBar: Container(
+        //height: 100.0,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40.0),
+                topRight: Radius.circular(40.0),
+                bottomRight: Radius.circular(40.0),
+                bottomLeft: Radius.circular(40.0)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                spreadRadius: 0,
+                blurRadius: 10,
+              ),
+            ],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.only(
+                topRight: Radius.circular(30.0),
+                topLeft: Radius.circular(30.0),
+                bottomLeft: Radius.circular(30),
+                bottomRight: Radius.circular(30)),
+            child: BottomNavigationBar(
+              currentIndex: _currentIndex,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: Color(0xff7FD858),
+              unselectedItemColor: Color(0xff0064BF),
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.more_horiz),
+                  title: Text('المزيد',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.people),
+                  title: Text('الملف الشخصى',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                  icon: Container(
+                    child: CircleAvatar(
+                        backgroundColor: const Color(0xff7fd858),
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        )),
+                  ),
+                  title: Text('تبرع الان',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.favorite_border),
+                  title: Text('الحالات',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Century',
+                        fontWeight: FontWeight.w900,
+                      )),
+                ),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.home),
+                    title: Text(
+                      'الصفحة الرئيسية',
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w900,
+                          fontFamily: 'Century'),
+                    )),
+              ],
+              onTap: (index) {
+                setState(() {
+                  _currentIndex = index;
+                });
+              },
+            ),
+          )),
+
     );
   }
 }
