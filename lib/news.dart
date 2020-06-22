@@ -111,7 +111,7 @@ class _NewsState extends State<News> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 15, right: 15, top: 265),
+                    padding: EdgeInsets.only(left: 10, right: 10, top: 265),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -135,7 +135,7 @@ class _NewsState extends State<News> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 23, right: 23, top: 360),
+                    padding: EdgeInsets.only(left: 18, right: 18, top: 360),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -275,7 +275,7 @@ class _NewsState extends State<News> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 15, right: 15, top: 650),
+                    padding: EdgeInsets.only(left: 10, right: 10, top: 650),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -299,7 +299,7 @@ class _NewsState extends State<News> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 23, right: 23, top: 740),
+                    padding: EdgeInsets.only(left: 18, right: 18, top: 740),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[

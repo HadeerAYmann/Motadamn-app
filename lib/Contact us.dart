@@ -48,7 +48,7 @@ class _ContactState extends State<Contact> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 170, left: 33),
+                  padding: EdgeInsets.only(top: 170, left: 20),
                   child: Container(
                     width: 370.0,
                     height: 510.0,

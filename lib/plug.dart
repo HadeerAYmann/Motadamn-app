@@ -46,7 +46,7 @@ class _PlugState extends State<Plug> {
                 onPressed: () {},
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 100),
+                padding: EdgeInsets.only(left: 100),
                 child: Text(
                   "جميع البرامج",
                   textAlign: TextAlign.center,
