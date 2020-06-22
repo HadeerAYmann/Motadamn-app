@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/Donor.dart';
+import 'package:flutterapp/Login-as.dart';
+import 'package:flutterapp/Payment.dart';
+import 'package:flutterapp/Thanks.dart';
 import 'package:flutterapp/program10.dart';
 import 'package:flutterapp/program11.dart';
 import 'package:flutterapp/program12.dart';
@@ -69,12 +72,13 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-//      home: Home1(),
+      home: Program(),
 //      home: Waiting(),
       // home: Drop(),
 //     home: WaitingCases(),
 //      home: InfoBenef(),
 //      home: InfoCases(),
+
 //       home: InfoBeneficial(),
 //      home: Profile(),
       // home: Peneficial(),
@@ -89,7 +93,7 @@ void main() {
 //       home: Screen4(),
 //      home: Screen5(),
       //home: Program1(),
-      home: Plug(),
+//      home: Plug(),
 //      home: Screen6(),
       // home: DatePicker(),
     ),

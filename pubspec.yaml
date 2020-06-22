@@ -170,6 +170,14 @@ flutter:
     - images/case.jpeg
     - images/case.png
     - images/donor.png
+    - images/Payment.png
+    - images/Mega.png
+    - images/Visa.png
+    - images/Meza.png
+    - images/Cash.png
+    - images/love.png
+    - images/checked.png
+    - images/Login.jpg
 
   fonts:
     - family: Century

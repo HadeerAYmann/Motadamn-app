@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'Payment.dart';
+import 'info_cases.dart';
+
 
 class Cases extends StatefulWidget {
   @override
@@ -88,113 +91,266 @@ class _CasesState extends State<Cases> {
             child: GridView.count(
               crossAxisCount: 2,
               childAspectRatio: .85,
-              padding: EdgeInsets.all(20),
-              crossAxisSpacing: 20,
+              padding: EdgeInsets.all(10),
+              crossAxisSpacing: 10,
               mainAxisSpacing: 10,
               children: <Widget>[
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xff86B9F7),
-                        blurRadius: 10.0,
-                        offset: Offset(4.0, 4.0),
-                      ),
-                    ],
-                  ),
-                  height: 209,
-                  width: 152,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 5,
-                              left: 20,
-                            ),
-                            child: Container(
-                              height: 85.0,
-                              width: 85.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(85),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoCases(),
+                        ));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xff86B9F7),
+                          blurRadius: 10.0,
+                          offset: Offset(4.0, 4.0),
+                        ),
+                      ],
+                    ),
+                    height: 209,
+                    width: 152,
+                    child: Column(
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 5,
+                                left: 20,
                               ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(85),
-                                child: Image.asset(
-                                  'images/Case1.jpeg',
-                                  width: 85,
-                                  height: 85,
-                                  fit: BoxFit.fill,
+                              child: Container(
+                                height: 85.0,
+                                width: 85.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(85),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(85),
+                                  child: Image.asset(
+                                    'images/Case1.jpeg',
+                                    width: 85,
+                                    height: 85,
+                                    fit: BoxFit.fill,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 75,
-                              left: 15,
-                            ),
-                            child: Text(
-                              ' يوسف',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 30,
-                                color: Color(0xffF7DC0C),
-                                fontWeight: FontWeight.w700,
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 75,
+                                left: 15,
+                              ),
+                              child: Text(
+                                ' يوسف',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 30,
+                                  color: Color(0xffF7DC0C),
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 125,
+                            SizedBox(
+                              height: 10,
                             ),
-                            child: Text(
-                              ' يحتاج الى 4000 جنيها\n شهريا ليعيش حياه كريمه ',
-                              style: TextStyle(
-                                fontFamily: 'Century',
-                                fontSize: 12,
-                                color: Color(0xff000000),
-                                fontWeight: FontWeight.w700,
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 125,
                               ),
-                              textAlign: TextAlign.right,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 158,
-                            ),
-                            child: Text(
-                              'مصر الخير ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 15,
-                                color: Color(0xff0064BF),
-                                fontWeight: FontWeight.w700,
+                              child: Text(
+                                ' يحتاج الى 4000 جنيها\n شهريا ليعيش حياه كريمه ',
+                                style: TextStyle(
+                                  fontFamily: 'Century',
+                                  fontSize: 12,
+                                  color: Color(0xff000000),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.right,
                               ),
-                              textAlign: TextAlign.left,
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 182,
-                              left: 33,
-                            ),
-                            child: Container(
-                              width: 70.0,
-                              height: 33.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                color: Color(0xff7fd858),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 158,
                               ),
-                              child: Column(
-                                children: <Widget>[
-                                  Text(
+                              child: Text(
+                                'مصر الخير ',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 15,
+                                  color: Color(0xff0064BF),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.left,
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Payment(),
+                                    ));
+                              },
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  top: 182,
+                                  left: 33,
+                                ),
+                                child: Container(
+                                  width: 70.0,
+                                  height: 33.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    color: Color(0xff7fd858),
+                                  ),
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text(
+                                        'تبرع الان',
+                                        style: TextStyle(
+                                          fontFamily: 'Simple',
+                                          fontSize: 15,
+                                          color: Color(0xfffffdfd),
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoCases(),
+                        ));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xff86B9F7),
+                          blurRadius: 10.0,
+                          offset: Offset(4.0, 4.0),
+                        ),
+                      ],
+                    ),
+                    height: 209,
+                    width: 152,
+                    child: Column(
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 5,
+                                left: 20,
+                              ),
+                              child: Container(
+                                height: 85.0,
+                                width: 85.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(85),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(85),
+                                  child: Image.asset(
+                                    'images/Case2.jpeg',
+                                    width: 85,
+                                    height: 85,
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 75,
+                                left: 45,
+                              ),
+                              child: Text(
+                                'احمد',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 30,
+                                  color: Color(0xffF7DC0C),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 125,
+                              ),
+                              child: Text(
+                                'يحتاج الى 2000 جنيها\n شهريا ليعيش حياه كريمه ',
+                                style: TextStyle(
+                                  fontFamily: 'Century',
+                                  fontSize: 12,
+                                  color: Color(0xff000000),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.right,
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 158,
+                              ),
+                              child: Text(
+                                'الاورمان ',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 15,
+                                  color: Color(0xff0064BF),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.left,
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Payment(),
+                                    ));
+                              },
+                              child:Padding(
+                                padding: EdgeInsets.only(
+                                  top: 182,
+                                  left: 33,
+                                ),
+                                child: Container(
+                                  width: 70.0,
+                                  height: 33.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    color: Color(0xff7fd858),
+                                  ),
+                                  child: Text(
                                     'تبرع الان',
                                     style: TextStyle(
                                       fontFamily: 'Simple',
@@ -204,598 +360,553 @@ class _CasesState extends State<Cases> {
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xff86B9F7),
-                        blurRadius: 10.0,
-                        offset: Offset(4.0, 4.0),
-                      ),
-                    ],
-                  ),
-                  height: 209,
-                  width: 152,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 5,
-                              left: 20,
-                            ),
-                            child: Container(
-                              height: 85.0,
-                              width: 85.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(85),
-                              ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(85),
-                                child: Image.asset(
-                                  'images/Case2.jpeg',
-                                  width: 85,
-                                  height: 85,
-                                  fit: BoxFit.fill,
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 75,
-                              left: 45,
-                            ),
-                            child: Text(
-                              'احمد',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 30,
-                                color: Color(0xffF7DC0C),
-                                fontWeight: FontWeight.w700,
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoCases(),
+                        ));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xff86B9F7),
+                          blurRadius: 10.0,
+                          offset: Offset(4.0, 4.0),
+                        ),
+                      ],
+                    ),
+                    height: 209,
+                    width: 152,
+                    child: Column(
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 5,
+                                left: 20,
+                              ),
+                              child: Container(
+                                height: 85.0,
+                                width: 85.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(85),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(85),
+                                  child: Image.asset(
+                                    'images/Case3.jpg',
+                                    width: 85,
+                                    height: 85,
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 125,
-                            ),
-                            child: Text(
-                              'يحتاج الى 2000 جنيها\n شهريا ليعيش حياه كريمه ',
-                              style: TextStyle(
-                                fontFamily: 'Century',
-                                fontSize: 12,
-                                color: Color(0xff000000),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.right,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 158,
-                            ),
-                            child: Text(
-                              'الاورمان ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 15,
-                                color: Color(0xff0064BF),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 182,
-                              left: 33,
-                            ),
-                            child: Container(
-                              width: 70.0,
-                              height: 33.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                color: Color(0xff7fd858),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 75,
+                                left: 45,
                               ),
                               child: Text(
-                                'تبرع الان',
+                                'سعيد ',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 30,
+                                  color: Color(0xffF7DC0C),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 125,
+                              ),
+                              child: Text(
+                                'يحتاج الى 5000 جنيها\n شهريا ليعيش حياه كريمه ',
+                                style: TextStyle(
+                                  fontFamily: 'Century',
+                                  fontSize: 12,
+                                  color: Color(0xff000000),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.right,
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 158,
+                              ),
+                              child: Text(
+                                ' رساله ',
                                 style: TextStyle(
                                   fontFamily: 'Simple',
                                   fontSize: 15,
-                                  color: Color(0xfffffdfd),
+                                  color: Color(0xff0064BF),
                                   fontWeight: FontWeight.w700,
                                 ),
-                                textAlign: TextAlign.center,
+                                textAlign: TextAlign.left,
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xff86B9F7),
-                        blurRadius: 10.0,
-                        offset: Offset(4.0, 4.0),
-                      ),
-                    ],
-                  ),
-                  height: 209,
-                  width: 152,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 5,
-                              left: 20,
-                            ),
-                            child: Container(
-                              height: 85.0,
-                              width: 85.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(85),
-                              ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(85),
-                                child: Image.asset(
-                                  'images/Case3.jpg',
-                                  width: 85,
-                                  height: 85,
-                                  fit: BoxFit.fill,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Payment(),
+                                    ));
+                              },
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  top: 182,
+                                  left: 33,
+                                ),
+                                child: Container(
+                                  width: 70.0,
+                                  height: 33.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    color: Color(0xff7fd858),
+                                  ),
+                                  child: Text(
+                                    'تبرع الان',
+                                    style: TextStyle(
+                                      fontFamily: 'Simple',
+                                      fontSize: 15,
+                                      color: Color(0xfffffdfd),
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 75,
-                              left: 45,
-                            ),
-                            child: Text(
-                              'سعيد ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 30,
-                                color: Color(0xffF7DC0C),
-                                fontWeight: FontWeight.w700,
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoCases(),
+                        ));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xff86B9F7),
+                          blurRadius: 10.0,
+                          offset: Offset(4.0, 4.0),
+                        ),
+                      ],
+                    ),
+                    height: 209,
+                    width: 152,
+                    child: Column(
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 5,
+                                left: 20,
+                              ),
+                              child: Container(
+                                height: 85.0,
+                                width: 85.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(85),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(85),
+                                  child: Image.asset(
+                                    'images/Case4.jpg',
+                                    width: 85,
+                                    height: 85,
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 125,
-                            ),
-                            child: Text(
-                              'يحتاج الى 5000 جنيها\n شهريا ليعيش حياه كريمه ',
-                              style: TextStyle(
-                                fontFamily: 'Century',
-                                fontSize: 12,
-                                color: Color(0xff000000),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.right,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 158,
-                            ),
-                            child: Text(
-                              ' رساله ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 15,
-                                color: Color(0xff0064BF),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 182,
-                              left: 33,
-                            ),
-                            child: Container(
-                              width: 70.0,
-                              height: 33.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                color: Color(0xff7fd858),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 75,
+                                left: 45,
                               ),
                               child: Text(
-                                'تبرع الان',
+                                'محمد',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 30,
+                                  color: Color(0xffF7DC0C),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 125,
+                              ),
+                              child: Text(
+                                'يحتاج الى 10000 جنيها\n شهريا ليعيش حياه كريمه ',
+                                style: TextStyle(
+                                  fontFamily: 'Century',
+                                  fontSize: 12,
+                                  color: Color(0xff000000),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.right,
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 158,
+                              ),
+                              child: Text(
+                                'صناع الحياه ',
                                 style: TextStyle(
                                   fontFamily: 'Simple',
                                   fontSize: 15,
-                                  color: Color(0xfffffdfd),
+                                  color: Color(0xff0064BF),
                                   fontWeight: FontWeight.w700,
                                 ),
-                                textAlign: TextAlign.center,
+                                textAlign: TextAlign.left,
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xff86B9F7),
-                        blurRadius: 10.0,
-                        offset: Offset(4.0, 4.0),
-                      ),
-                    ],
-                  ),
-                  height: 209,
-                  width: 152,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 5,
-                              left: 20,
-                            ),
-                            child: Container(
-                              height: 85.0,
-                              width: 85.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(85),
-                              ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(85),
-                                child: Image.asset(
-                                  'images/Case4.jpg',
-                                  width: 85,
-                                  height: 85,
-                                  fit: BoxFit.fill,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Payment(),
+                                    ));
+                              },
+                              child:Padding(
+                                padding: EdgeInsets.only(
+                                  top: 182,
+                                  left: 33,
+                                ),
+                                child: Container(
+                                  width: 70.0,
+                                  height: 33.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    color: Color(0xff7fd858),
+                                  ),
+                                  child: Text(
+                                    'تبرع الان',
+                                    style: TextStyle(
+                                      fontFamily: 'Simple',
+                                      fontSize: 15,
+                                      color: Color(0xfffffdfd),
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 75,
-                              left: 45,
-                            ),
-                            child: Text(
-                              'محمد',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 30,
-                                color: Color(0xffF7DC0C),
-                                fontWeight: FontWeight.w700,
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoCases(),
+                        ));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xff86B9F7),
+                          blurRadius: 10.0,
+                          offset: Offset(4.0, 4.0),
+                        ),
+                      ],
+                    ),
+                    height: 209,
+                    width: 152,
+                    child: Column(
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 5,
+                                left: 20,
+                              ),
+                              child: Container(
+                                height: 85.0,
+                                width: 85.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(85),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(85),
+                                  child: Image.asset(
+                                    'images/Case5.jpg',
+                                    width: 85,
+                                    height: 85,
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 125,
-                            ),
-                            child: Text(
-                              'يحتاج الى 10000 جنيها\n شهريا ليعيش حياه كريمه ',
-                              style: TextStyle(
-                                fontFamily: 'Century',
-                                fontSize: 12,
-                                color: Color(0xff000000),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.right,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 158,
-                            ),
-                            child: Text(
-                              'صناع الحياه ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 15,
-                                color: Color(0xff0064BF),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 182,
-                              left: 33,
-                            ),
-                            child: Container(
-                              width: 70.0,
-                              height: 33.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                color: Color(0xff7fd858),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 90,
+                                left: 38,
                               ),
                               child: Text(
-                                'تبرع الان',
+                                'اسره احمد',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 20,
+                                  color: Color(0xffF7DC0C),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 128,
+                              ),
+                              child: Text(
+                                'هذه الاسره تحتاج الى سقف بيت ',
+                                style: TextStyle(
+                                  fontFamily: 'Century',
+                                  fontSize: 10,
+                                  color: Color(0xff000000),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.right,
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 145,
+                              ),
+                              child: Text(
+                                'مصر الخير ',
                                 style: TextStyle(
                                   fontFamily: 'Simple',
                                   fontSize: 15,
-                                  color: Color(0xfffffdfd),
+                                  color: Color(0xff0064BF),
                                   fontWeight: FontWeight.w700,
                                 ),
-                                textAlign: TextAlign.center,
+                                textAlign: TextAlign.left,
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xff86B9F7),
-                        blurRadius: 10.0,
-                        offset: Offset(4.0, 4.0),
-                      ),
-                    ],
-                  ),
-                  height: 209,
-                  width: 152,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 5,
-                              left: 20,
-                            ),
-                            child: Container(
-                              height: 85.0,
-                              width: 85.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(85),
-                              ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(85),
-                                child: Image.asset(
-                                  'images/Case5.jpg',
-                                  width: 85,
-                                  height: 85,
-                                  fit: BoxFit.fill,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Payment(),
+                                    ));
+                              },
+                              child:Padding(
+                                padding: EdgeInsets.only(
+                                  top: 175,
+                                  left: 30,
+                                ),
+                                child: Container(
+                                  width: 70.0,
+                                  height: 33.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    color: Color(0xff7fd858),
+                                  ),
+                                  child: Text(
+                                    'تبرع الان',
+                                    style: TextStyle(
+                                      fontFamily: 'Simple',
+                                      fontSize: 15,
+                                      color: Color(0xfffffdfd),
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 90,
-                              left: 38,
-                            ),
-                            child: Text(
-                              'اسره احمد',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 20,
-                                color: Color(0xffF7DC0C),
-                                fontWeight: FontWeight.w700,
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoCases(),
+                        ));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xff86B9F7),
+                          blurRadius: 10.0,
+                          offset: Offset(4.0, 4.0),
+                        ),
+                      ],
+                    ),
+                    height: 209,
+                    width: 152,
+                    child: Column(
+                      children: <Widget>[
+                        Stack(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 5,
+                                left: 20,
+                              ),
+                              child: Container(
+                                height: 85.0,
+                                width: 85.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(85),
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(85),
+                                  child: Image.asset(
+                                    'images/Case6.jpeg',
+                                    width: 85,
+                                    height: 85,
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 128,
-                            ),
-                            child: Text(
-                              'هذه الاسره تحتاج الى سقف بيت ',
-                              style: TextStyle(
-                                fontFamily: 'Century',
-                                fontSize: 10,
-                                color: Color(0xff000000),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.right,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 145,
-                            ),
-                            child: Text(
-                              'مصر الخير ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 15,
-                                color: Color(0xff0064BF),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 175,
-                              left: 30,
-                            ),
-                            child: Container(
-                              width: 70.0,
-                              height: 33.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                color: Color(0xff7fd858),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 90,
+                                left: 38,
                               ),
                               child: Text(
-                                'تبرع الان',
+                                'اسره احمد',
+                                style: TextStyle(
+                                  fontFamily: 'Simple',
+                                  fontSize: 20,
+                                  color: Color(0xffF7DC0C),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 128,
+                              ),
+                              child: Text(
+                                'هذه الاسره تحتاج الى سقف بيت ',
+                                style: TextStyle(
+                                  fontFamily: 'Century',
+                                  fontSize: 10,
+                                  color: Color(0xff000000),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.right,
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 145,
+                              ),
+                              child: Text(
+                                'مصر الخير ',
                                 style: TextStyle(
                                   fontFamily: 'Simple',
                                   fontSize: 15,
-                                  color: Color(0xfffffdfd),
+                                  color: Color(0xff0064BF),
                                   fontWeight: FontWeight.w700,
                                 ),
-                                textAlign: TextAlign.center,
+                                textAlign: TextAlign.left,
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xff86B9F7),
-                        blurRadius: 10.0,
-                        offset: Offset(4.0, 4.0),
-                      ),
-                    ],
-                  ),
-                  height: 209,
-                  width: 152,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 5,
-                              left: 20,
-                            ),
-                            child: Container(
-                              height: 85.0,
-                              width: 85.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(85),
-                              ),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(85),
-                                child: Image.asset(
-                                  'images/Case6.jpeg',
-                                  width: 85,
-                                  height: 85,
-                                  fit: BoxFit.fill,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Payment(),
+                                    ));
+                              },
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  top: 175,
+                                  left: 30,
+                                ),
+                                child: Container(
+                                  width: 70.0,
+                                  height: 33.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    color: Color(0xff7fd858),
+                                  ),
+                                  child: Text(
+                                    'تبرع الان',
+                                    style: TextStyle(
+                                      fontFamily: 'Simple',
+                                      fontSize: 15,
+                                      color: Color(0xfffffdfd),
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 90,
-                              left: 38,
-                            ),
-                            child: Text(
-                              'اسره احمد',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 20,
-                                color: Color(0xffF7DC0C),
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 128,
-                            ),
-                            child: Text(
-                              'هذه الاسره تحتاج الى سقف بيت ',
-                              style: TextStyle(
-                                fontFamily: 'Century',
-                                fontSize: 10,
-                                color: Color(0xff000000),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.right,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 145,
-                            ),
-                            child: Text(
-                              'مصر الخير ',
-                              style: TextStyle(
-                                fontFamily: 'Simple',
-                                fontSize: 15,
-                                color: Color(0xff0064BF),
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 175,
-                              left: 30,
-                            ),
-                            child: Container(
-                              width: 70.0,
-                              height: 33.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                color: Color(0xff7fd858),
-                              ),
-                              child: Text(
-                                'تبرع الان',
-                                style: TextStyle(
-                                  fontFamily: 'Simple',
-                                  fontSize: 15,
-                                  color: Color(0xfffffdfd),
-                                  fontWeight: FontWeight.w700,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
